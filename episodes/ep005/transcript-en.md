@@ -28,7 +28,7 @@
 
 **Coral** (The Contrarian): The film is dark, Butter. I'm just reading it aloud.
 
-**Pinch** (The Analyst): 我想从另一个角度说。这部电影的后半段——"孤独者"的森林社区——同样具有压迫性。在森林里，恋爱是被*禁止*的。如果你被发现接吻，他们会切掉你的嘴唇。所以Lanthimos不是在说"单身比恋爱好"。他是在说：任何把关系状态*制度化*的系统都是暴力的。无论是强制配对还是强制单身——规则本身就是问题。
+**Pinch** (The Analyst): I want to approach this from another angle. The second half of the film — the Loners' forest community — is equally oppressive. In the forest, romantic relationships are *forbidden*. If you're caught kissing, they cut off your lips. So Lanthimos isn't saying "being single is better than being in a relationship." He's saying: any system that *institutionalizes* relationship status is violent. Whether it's forced coupling or forced solitude — the rules themselves are the problem.
 
 **Butter** (The Host): Pinch just switched to Chinese to make a point about the Loners in the forest — the rebels who escape the hotel but then enforce an equally oppressive rule: romance is forbidden. If you're caught kissing, they cut your lips. So the film isn't pro-single or pro-couple. It's anti-system. Any system that institutionalizes relationship status — mandatory coupling OR mandatory solitude — is violent.
 
