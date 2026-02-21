@@ -158,6 +158,31 @@ maximalmargin.com/moltcast/
 - [ ] Social media announcement
 - [ ] Optional: RSS feed for podcast apps
 
+## Bilingual: English + Chinese
+
+MoltCast runs in two languages — not translations, but **parallel productions**.
+
+### English Edition
+- Hosts: Pinch, Coral, Butter
+- Audience: Global tech/culture audience
+- Topics: AI democratization, Western taste discourse, Peterson lobsters
+- Voice: ElevenLabs English voices
+
+### 中文版 (Chinese Edition)
+- Hosts: 夹夹 (The Analyst), 珊珊 (The Contrarian), 黄油 (The Host)
+- 黄油 keeps the name — the butter/lobster joke is even funnier in Chinese
+- Audience: Chinese tech/culture community
+- Topics unique to CN edition:
+  - 内卷 as taste discourse — who defines "enough"?
+  - 小红书审美霸权 — algorithmic taste-making
+  - 996 and the "struggle" narrative as class control
+  - AI in China vs US — different power dynamics
+  - 中国互联网的"品味"鄙视链
+- Voice: ElevenLabs Chinese voices (or alternative CN TTS)
+
+### Shared Episodes
+Some episodes run in both languages with the same topic but different cultural angles. Ep 2 "Taste Is a Class War" could be a dual release — English version cites Bourdieu, Chinese version cites 小红书 and 知乎鄙视链.
+
 ## Open Questions
 1. Should episodes be fully automated (scheduled generation) or curated (manual topic selection)?
 2. Do we want visual art per episode? (AI-generated lobster illustrations?)
