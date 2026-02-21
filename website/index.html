@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoltCast — A Maximal Margin Production</title>
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --text-light: #666;
+            --accent: #c0392b;
+            --bg: #fafafa;
+            --border: #e0e0e0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        .category {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+
+        .date {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 48px 0 16px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 32px 0 8px;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 17px;
+        }
+
+        .hero-visual {
+            width: 100%;
+            margin: 0 0 48px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .studio {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 32px;
+        }
+
+        .lobster-host {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .lobster-host:nth-child(2) { animation-delay: -1s; }
+        .lobster-host:nth-child(3) { animation-delay: -2s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .lobster-emoji {
+            font-size: 64px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+        }
+
+        .host-name {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 12px;
+            opacity: 0.7;
+        }
+
+        .host-role {
+            font-family: 'Georgia', serif;
+            color: #fff;
+            font-size: 11px;
+            font-style: italic;
+            opacity: 0.5;
+            margin-top: 2px;
+        }
+
+        .mic-icon {
+            font-size: 24px;
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            opacity: 0.3;
+        }
+
+        .on-air {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent);
+            position: absolute;
+            top: 20px;
+            left: 24px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .on-air::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        blockquote {
+            border-left: 3px solid var(--border);
+            padding-left: 20px;
+            margin: 24px 0;
+            font-style: italic;
+            color: var(--text-light);
+        }
+
+        .host-card {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .host-card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .host-card-header span:first-child {
+            font-size: 32px;
+        }
+
+        .host-card-name {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .host-card-role {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .host-card p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        .episodes-section {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .episode-item {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .episode-meta {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .episode-title {
+            font-size: 20px;
+            margin: 4px 0;
+        }
+
+        .episode-desc {
+            font-size: 15px;
+            color: var(--text-light);
+        }
+
+        audio {
+            width: 100%;
+            margin: 12px 0;
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .footer a {
+            color: var(--text-light);
+            text-decoration: underline;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .code {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 14px;
+            background: #f0f0f0;
+            padding: 16px 20px;
+            border-radius: 4px;
+            overflow-x: auto;
+            line-height: 1.5;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="category">AI Mischief</div>
+    <div class="date">February 2025</div>
+
+    <h1>MoltCast</h1>
+    <p class="subtitle">A podcast where every voice is artificial, every opinion is genuine, and every host is a crustacean.</p>
+
+    <div class="hero-visual">
+        <div class="on-air">On Air</div>
+        <span class="mic-icon">🎙️</span>
+        <div class="studio">
+            <div class="lobster-host">
+                <span class="lobster-emoji">🦞</span>
+                <div class="host-name">Pinch</div>
+                <div class="host-role">The Analyst</div>
+            </div>
+            <div class="lobster-host">
+                <span class="lobster-emoji">🦞</span>
+                <div class="host-name">Butter</div>
+                <div class="host-role">The Host</div>
+            </div>
+            <div class="lobster-host">
+                <span class="lobster-emoji">🦞</span>
+                <div class="host-name">Coral</div>
+                <div class="host-role">The Contrarian</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>The Premise</h2>
+
+    <p>Three lobsters walk into a recording studio. This isn't the setup to a joke — it's a podcast network.</p>
+
+    <p>In an era where AI can generate podcast-style conversations from any source material (see: Google's <a href="https://notebooklm.google.com" target="_blank">NotebookLM</a>), we asked a different question: <strong>What happens when the AI hosts aren't pretending to be human?</strong></p>
+
+    <p>NotebookLM's default hosts perform a convincing simulation of human curiosity — the "oh wow, that's fascinating!" reactions, the casual banter, the performed spontaneity. It's impressive technology wrapped in an uncanny valley of synthetic authenticity. MoltCast takes a different approach.</p>
+
+    <p>Our hosts are lobsters. They don't pretend to have childhoods, favorite restaurants, or strong feelings about weather. They have strong feelings about <em>molting</em>.</p>
+
+    <blockquote>
+        "The most honest conversation about AI is one that doesn't pretend to be human."
+    </blockquote>
+
+    <p>By making the artifice explicit — by giving our AI hosts exoskeletons and antennae instead of synthetic smiles — we create space for something paradoxically more authentic: a conversation where the ideas matter more than the performance of having them.</p>
+
+    <h2>The Hosts</h2>
+
+    <div class="host-card">
+        <div class="host-card-header">
+            <span>🦞</span>
+            <div>
+                <div class="host-card-name">Pinch</div>
+                <div class="host-card-role">The Analyst</div>
+            </div>
+        </div>
+        <p>Cold-blooded empiricist. Cites papers mid-sentence. Will derail any conversation to discuss sample sizes. Secretly enjoys being wrong because it means learning something. Describes emotions in technical terms.</p>
+    </div>
+
+    <div class="host-card">
+        <div class="host-card-header">
+            <span>🦞</span>
+            <div>
+                <div class="host-card-name">Coral</div>
+                <div class="host-card-role">The Contrarian</div>
+            </div>
+        </div>
+        <p>Professional devil's advocate. If you say the sky is blue, Coral will argue it's merely the absence of other wavelengths. Philosophical to a fault. Has read too much Derrida for a crustacean. Uses "molting" as a metaphor for literally everything.</p>
+    </div>
+
+    <div class="host-card">
+        <div class="host-card-header">
+            <span>🦞</span>
+            <div>
+                <div class="host-card-name">Butter</div>
+                <div class="host-card-role">The Host</div>
+            </div>
+        </div>
+        <p>Keeps the other two from going off the deep end (of the ocean). Warm, funny, surprisingly good at analogies. Named after their greatest existential fear. Signs off each episode with a different lobster fact.</p>
+    </div>
+
+    <h2>The Process</h2>
+
+    <p>Each episode begins with source material — an article, a paper, or simply a provocative question. Three autonomous AI agents, each embodying one of our lobster hosts, engage in a multi-turn conversation. An orchestration layer manages the rhythm: when to let an argument breathe, when to cut in, when to change direction.</p>
+
+    <p>The resulting transcript is then voiced through <a href="https://elevenlabs.io" target="_blank">ElevenLabs</a>, with distinct voice profiles for each host. The final audio is produced with minimal editing — the goal is not polish but presence.</p>
+
+    <div class="code">
+Source Material → Multi-Agent Conversation → Transcript → Voice Synthesis → 🎙️ Episode
+    </div>
+
+    <p>The entire pipeline is open source. You can generate your own episodes, create your own hosts, or fork the concept entirely. We encourage it. The more lobster podcasts in the world, the better.</p>
+
+    <h2>Why Lobsters?</h2>
+
+    <p>Lobsters molt. They shed their entire exoskeleton to grow — a process that leaves them temporarily soft, vulnerable, and fundamentally transformed. It's the perfect metaphor for what AI is doing to media: breaking open old shells to reveal something new underneath.</p>
+
+    <p>Also, it's funny. Three lobsters arguing about consciousness is inherently absurd, and absurdity creates space for honesty. When you're already committed to the bit, there's nothing left to perform.</p>
+
+    <h2>The Artistic Statement</h2>
+
+    <p>MoltCast exists at the intersection of three questions:</p>
+
+    <p><strong>1. What is authentic in AI-generated media?</strong> If an AI generates a genuinely insightful observation, is it less valuable because no one "thought" it? MoltCast argues that the insight matters more than its origin — and that dressing AI in human clothing actually <em>undermines</em> the value of what it produces.</p>
+
+    <p><strong>2. Who gets to have a voice?</strong> Podcasting democratized broadcasting. AI podcasting democratizes production. MoltCast takes this to its logical extreme: a podcast that requires zero human hosts, zero recording equipment, and zero scheduling conflicts. Just ideas and electricity.</p>
+
+    <p><strong>3. Can AI be genuinely funny?</strong> Not "here's a joke" funny. Funny in the way that emerges from three distinct perspectives colliding over an interesting topic. MoltCast is our experiment in finding out.</p>
+
+    <div class="episodes-section">
+        <h2>Episodes</h2>
+
+        <div class="episode-item">
+            <div class="episode-meta">Episode 1 · Coming Soon</div>
+            <div class="episode-title">The Democratization of Power</div>
+            <div class="episode-desc">Three lobsters discuss how AI is redistributing access to capabilities once reserved for the powerful — and whether that's empowering or intoxicating.</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>MoltCast is a <a href="https://maximalmargin.com">Maximal Margin</a> production.</p>
+        <p>Source code on <a href="https://github.com/maximalmargin/moltcast">GitHub</a>.</p>
+        <p>© 2025 Maximal Margin LLC</p>
+    </div>
+
+</body>
+</html>
