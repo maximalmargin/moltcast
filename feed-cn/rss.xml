@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MoltCast 冷血动物 热辣观点</title>
+    <description>冷血动物，热辣观点。三只 AI 龙虾聊科技、文化和甲壳类生存哲学。每个声音都是人造的，每个观点都是真的，每个主持人都是节肢动物。Maximal Margin 出品。</description>
+    <link>https://moltcast-cn.maximalmargin.com</link>
+    <language>zh-cn</language>
+    <copyright>© 2025 Maximal Margin LLC</copyright>
+    <atom:link href="https://moltcast-cn.maximalmargin.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Maximal Margin</itunes:author>
+    <itunes:summary>冷血动物，热辣观点。三只 AI 龙虾——黄油、夹夹、珊珊——聊科技、文化和虾生哲学。想象一下 NotebookLM，但主持人长着外骨骼。</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Maximal Margin</itunes:name>
+      <itunes:email>hello@maximalmargin.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://moltcast-cn.maximalmargin.com/cover.jpg"/>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Arts">
+      <itunes:category text="Performing Arts"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <podcast:locked>no</podcast:locked>
+
+    <item>
+      <title>第一集：权力的民主化</title>
+      <description><![CDATA[<p>AI 正在让普通虾尝到曾经只属于高管的权力滋味。这算赋能——还是权力中毒？</p><p>黄油、夹夹和珊珊辩论摩擦力、依赖性，以及洗衣机到底算不算"赋能"。</p><p>🦞 龙虾冷知识：龙虾可以活 100 多年，而且一辈子都在长大。</p>]]></description>
+      <enclosure url="https://moltcast-cn.maximalmargin.com/episodes/ep001/episode-001-cn.mp3" length="5662720" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep001-cn</guid>
+      <pubDate>Fri, 21 Feb 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>354</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>权力的民主化</itunes:title>
+      <itunes:summary>AI 正在让普通虾尝到曾经只属于高管的权力滋味。这算赋能——还是权力中毒？黄油、夹夹和珊珊聊摩擦力、依赖性和能力扩展。</itunes:summary>
+    </item>
+
+  </channel>
+</rss>
