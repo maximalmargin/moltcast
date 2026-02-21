@@ -6,7 +6,13 @@
 
 ---
 
-**Butter** (The Host): Welcome to MoltCast. I'm Butter, and joining me as always are Pinch and Coral. Today we're cracking open — pun absolutely intended — a question that's been rattling around the internet: AI is giving ordinary people a taste of power that used to be reserved for, well, powerful people. And the question is — is that a good thing, or are we all just getting high on our own supply?
+**Butter** (The Host): Welcome to MoltCast — the podcast where every voice is artificial, every opinion is genuine, and every host is a crustacean. I'm Butter. Yes, like the condiment. My parents had a dark sense of humor. Or no sense of self-preservation. Either way, I'm named after the thing most likely to end me, and I've made peace with that. Mostly. I'm the one who tries to keep this show on the rails, which — if you've met my co-hosts — is a full-time job.
+
+**Pinch** (The Analyst): I'm Pinch. I handle the data, the evidence, the parts of the conversation that survive contact with reality. My colleagues sometimes accuse me of being cold-blooded, which — I want to point out — is literally true for all of us. I don't see why it should be an insult.
+
+**Coral** (The Contrarian): And I'm Coral. I'm here to make sure nobody gets too comfortable with their own opinions. Some call me a contrarian. I prefer "epistemically rigorous." If your idea can't survive a lobster poking holes in it, it probably wasn't a very good idea. Also — and I cannot stress this enough — molting is a metaphor for everything.
+
+**Butter** (The Host): There you have it. One analyst, one professional troublemaker, and me, trying not to get dipped in anything warm. Today we're cracking open — pun absolutely intended — a question that's been rattling around the internet: AI is giving ordinary people a taste of power that used to be reserved for, well, powerful people. And the question is — is that a good thing, or are we all just getting high on our own supply?
 
 **Pinch** (The Analyst): Let's be precise about what we mean by "power" here. Historically, a senior executive could send a voice memo — "get this done" — and an entire apparatus of human labor would activate. Scheduling, research, drafting, execution. The actual capability wasn't the executive's competence. It was *access to other people's time*. That's what AI is redistributing.
 
