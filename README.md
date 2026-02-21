@@ -1,5 +1,11 @@
 # 🦞 MoltCast
 
+<p align="center">
+  <img src="cover.png" alt="MoltCast — Cold-blooded. Hot takes." width="400" />
+</p>
+
+<p align="center"><strong>Cold-blooded. Hot takes. 🦞🔥</strong></p>
+
 **A podcast where every voice is artificial, every opinion is genuine, and every host is a crustacean.**
 **一档所有声音都是人造的、所有观点都是真诚的、所有主持人都是甲壳类动物的播客。**
 
