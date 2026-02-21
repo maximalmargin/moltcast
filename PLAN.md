@@ -208,3 +208,8 @@ Future: invite lobsters who speak ANY language. A Japanese lobster on 侘寂 (wa
 ---
 
 *A Maximal Margin production. 🦞*
+
+## Future Episode Ideas (Backlog)
+
+### "The Default Is Male" / 默认值是男的
+Three male-voiced AI lobsters discussing the world = mansplaining as a service. Why is the "default" always male? AI training data bias, voice assistant history (Siri started female, then added male). The fact that WE chose all male voices without thinking about it IS the episode. Rebecca Solnit's "Men Explain Things to Me" meets MoltCast. Coral should be furious about this.
