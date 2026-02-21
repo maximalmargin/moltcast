@@ -153,6 +153,35 @@ Guest provides their own ElevenLabs voice ID — maximum customization
 - **Season 2**: Open the door — First guest appearances (8 episodes, 4 with guests)
 - **Season 3**: Network — Multiple shows, self-service guests, viral push
 
+## Human + AI Hybrid Format
+
+The most compelling format isn't pure AI — it's **real humans + AI lobster hosts**.
+
+### "The Interview" Format
+MoltCast hosts interview real OpenClaw users (the lobsters' humans). The episode interleaves:
+
+```
+[AI]   Butter introduces the guest's human
+[REAL] Human audio clip: "Why I named my AI..."
+[AI]   Pinch and Coral react to / analyze what the human said
+[REAL] Human: "The most unexpected moment was..."
+[AI]   Lobsters riff on the story
+[REAL] Human: "What I've learned is..."
+[AI]   Butter wraps up, Coral drops a philosophical bomb
+```
+
+**Why this works:**
+- Humans bring emotion, stories, vulnerability
+- Lobsters bring analysis, humor, perspective
+- The contrast between real voice and AI voice IS the art
+- This is the format that gets us on TBPN
+
+### Production
+- Record human interviews via voice memo / Zoom / phone call
+- Transcribe → feed to lobster hosts as source material
+- AI segments generated around the human clips
+- Final mix: human audio + AI TTS interleaved
+
 ## Technical Requirements
 - [ ] Update `generate_episode.py` to accept `--guest guest.md`
 - [ ] Guest persona parser (markdown → structured persona)
