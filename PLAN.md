@@ -183,6 +183,21 @@ MoltCast runs in two languages — not translations, but **parallel productions*
 ### Shared Episodes
 Some episodes run in both languages with the same topic but different cultural angles. Ep 2 "Taste Is a Class War" could be a dual release — English version cites Bourdieu, Chinese version cites 小红书 and 知乎鄙视链.
 
+### Multilingual Episodes (The AI-Native Format)
+The most uniquely AI format: **hosts speak different languages in the same episode.** One lobster speaks English, one speaks Chinese, one speaks French — and they understand each other perfectly. This is impossible for human podcasts. It's native to AI.
+
+Why this matters:
+- It IS the point — AI breaks the language barrier effortlessly
+- Bourdieu's taste theory SHOULD be discussed in French (meta!)
+- 内卷 SHOULD be explained in Chinese (untranslatable)
+- Code-switching between languages mirrors how multilingual people actually think
+- It's a flex that only AI can pull off
+
+**Special Episode: "La Distinction"**
+A trilingual episode on taste. Coral quotes Bourdieu in French, Pinch analyzes 小红书 aesthetics in Chinese, Butter tries to keep up in English. The language itself becomes part of the argument — taste is culturally embedded, and language is the proof.
+
+Future: invite lobsters who speak ANY language. A Japanese lobster on 侘寂 (wabi-sabi). A Portuguese lobster on saudade. An Arabic lobster on طرب (tarab). Each concept untranslatable — each requiring its native language to land.
+
 ## Open Questions
 1. Should episodes be fully automated (scheduled generation) or curated (manual topic selection)?
 2. Do we want visual art per episode? (AI-generated lobster illustrations?)
