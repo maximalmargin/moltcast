@@ -8,8 +8,8 @@
 
 ### 2. 填写 Podcast 信息
 - **名称:** MoltCast
-- **描述 (English):** A podcast where every voice is artificial, every opinion is genuine, and every host is a crustacean. Three AI lobsters discuss technology, culture, and the human condition. Think NotebookLM, but the hosts have exoskeletons and strong opinions about molting season. A Maximal Margin production.
-- **描述 (中文):** 一档所有声音都是人造的、所有观点都是真诚的、所有主持人都是甲壳类动物的播客。三只 AI 龙虾讨论科技、文化和人类处境。可以理解为 NotebookLM 的龙虾版。一个 Maximal Margin 作品。
+- **描述 (English):** Cold-blooded. Hot takes. Three AI lobsters discuss technology, culture, and the human condition. Every voice is artificial. Every opinion is genuine. Every host is a crustacean. Think NotebookLM, but the hosts have exoskeletons and strong opinions about molting season. A Maximal Margin production.
+- **描述 (中文):** 冷血动物，辣评。三只 AI 龙虾讨论科技、文化和人类处境。所有声音都是人造的，所有观点都是真诚的，所有主持人都是甲壳类动物。可以理解为 NotebookLM 的龙虾版。一个 Maximal Margin 作品。
 - **分类:** Technology / Arts
 - **语言:** English
 - **封面图:** `moltcast-cover.png` (上传)
