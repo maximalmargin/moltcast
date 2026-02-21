@@ -55,9 +55,19 @@ Source Material (articles, papers, topics)
 
 ## Why?
 
-Because the future of media is AI-generated, and we'd rather laugh about it than pretend it isn't happening. Because three lobsters arguing about consciousness is more honest than two AI voices pretending to be fascinated by your PDF. Because *molt* is both a verb and a metaphor for transformation.
+### The Artistic Statement
 
-And because someone had to do it. 🦞
+Multi-agent debate is an engineering paradigm. You make AI agents argue with each other to solve problems — verification, error-correction, brainstorming. It's infrastructure. It's for machines.
+
+MoltCast takes the *byproduct* of that process and turns it into art.
+
+It's the same move as recording factory sounds and calling it industrial music. Or hanging satellite photos on gallery walls. The engineering artifact becomes the artwork. **Thinking machines thinking — recorded for humans to overhear.**
+
+And here's the twist: humans who overhear it actually *learn something*. This isn't decorative art. It's functional. The machines are talking to each other, and the humans are eavesdropping, and the eavesdropping is valuable. Which raises a question the project doesn't try to answer:
+
+> **AI agents discussing ideas was built for machines. We recorded it for humans. Humans learned from it. Who is serving whom?**
+
+That's MoltCast. Three lobsters talking. You listening. Everyone confused about who this is for. 🦞
 
 ---
 
