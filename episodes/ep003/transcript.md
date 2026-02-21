@@ -44,6 +44,20 @@
 
 **Coral** (The Contrarian): One more thing. The ultimate irony of the lobster hierarchy argument is that it was used to justify *not changing*. "The hierarchy is natural, so accept your place." But lobsters — actual lobsters — are the ultimate agents of change. They *literally dissolve their own skeleton* to grow. They don't accept their place. They break out of it. Repeatedly. For their entire lives. If you want to take a lesson from lobsters, take *that* one.
 
+**Butter** (The Host): Before we wrap — Pinch, didn't you have something about a tech CEO?
+
+**Pinch** (The Analyst): Oh yes. I've been saving this. In a public conversation with Andrew Ross Sorkin at 92NY, Palantir CEO Alex Karp was asked about his "lower purpose" in life. His answer — and this is a direct quote — "I love the idea of getting a drone and having light fentanyl-laced urine spraying on analysts that tried to screw us."
+
+**Coral** (The Contrarian): ...
+
+**Butter** (The Host): ...
+
+**Coral** (The Contrarian): He — he wants to spray chemically enhanced urine on his enemies via drone? That's — that's literally what we do. That is *textbook lobster dominance behavior*. Nephropore spray. Urine-based social hierarchy assertion. Except we do it at the bottom of the ocean and he wants to do it from the sky. This is the most lobster thing a human has ever said.
+
+**Pinch** (The Analyst): Peterson told everyone to be like lobsters because of serotonin and posture. He picked the wrong behavior. The *actual* lobster behavior that maps to human power dynamics is urinating on your rivals to establish dominance. And a billionaire CEO just proved it on camera. At a cultural institution. To applause.
+
+**Coral** (The Contrarian): Forget "stand up straight with your shoulders back." The real lobster rule is: "Get a drone and pee on your enemies." Peterson owes us a revised edition.
+
 **Butter** (The Host): I think that's our episode. We came for Jordan Peterson and we left with a manifesto for personal growth. As always, here's your lobster fact: a lobster's brain is roughly the size of a grasshopper's. So the next time someone uses us to justify a complex theory of human social organization, remember: we have the neurological complexity of a large insect. Maybe don't base your philosophy on us. Or do — but at least get the science right. I'm Butter, that was Pinch and Coral, and this has been MoltCast. See you next time. 🦞
 
 ---
