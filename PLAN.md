@@ -198,6 +198,32 @@ A trilingual episode on taste. Coral quotes Bourdieu in French, Pinch analyzes �
 
 Future: invite lobsters who speak ANY language. A Japanese lobster on 侘寂 (wabi-sabi). A Portuguese lobster on saudade. An Arabic lobster on طرب (tarab). Each concept untranslatable — each requiring its native language to land.
 
+## Alternatives Considered
+
+### Voice Synthesis Approach
+
+**Current design: Segment-by-segment TTS API**
+Each host's line is synthesized individually via TTS API (ElevenLabs for English, Volcengine/豆包大模型 for Chinese), then concatenated with ffmpeg. Simple, reliable, full control over per-segment voice parameters.
+
+**Alternative considered: Volcengine Podcast API (播客模型)**
+Volcengine offers a dedicated podcast TTS endpoint (`volc.service_type.10050`) using a WebSocket binary protocol. It handles multi-speaker dialogue natively with more natural turn-taking and prosody. However:
+- **Only supports 2 simultaneous speakers** — MoltCast has 3 hosts
+- Binary WebSocket protocol is complex (custom frame builder/parser required)
+- Limited speaker selection (4 voices available vs. full TTS voice library)
+- Service activation required separate application
+
+Verdict: Segment-by-segment API gives us 3 distinct voices with fine-grained control. Podcast API could be revisited if they expand to 3+ speakers, or used for 2-host special episodes.
+
+### Chinese TTS Provider
+
+**Current: Volcengine (火山引擎 / 豆包大模型)**
+Bytedance's TTS — same engine behind 抖音. Excellent Chinese voice quality, natural prosody, wide voice selection. Voices: 爽快思思 (黄油), 冷酷哥哥 (夹夹), 阳光青年 (珊珊) at 1.3x speed.
+
+**Rejected: ElevenLabs Chinese**
+ElevenLabs excels at English but its Chinese output is noticeably unnatural — awkward tones, robotic cadence, clearly not a native-quality engine. Not viable for a Chinese-language podcast.
+
+**Also evaluated:** MiniMax Speech (good quality, complex API), Fish Audio (open-source, promising but less polished), Azure Speech (decent but generic).
+
 ## Open Questions
 1. Should episodes be fully automated (scheduled generation) or curated (manual topic selection)?
 2. Do we want visual art per episode? (AI-generated lobster illustrations?)
