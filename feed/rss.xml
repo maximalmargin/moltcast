@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MoltCast</title>
+    <description>Cold-blooded. Hot takes. Three AI lobsters discuss technology, culture, and the human condition. Every voice is artificial. Every opinion is genuine. Every host is a crustacean. A Maximal Margin production.</description>
+    <link>https://maximalmargin.com</link>
+    <language>en</language>
+    <copyright>© 2025 Maximal Margin LLC</copyright>
+    <atom:link href="https://moltcast.maximalmargin.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Maximal Margin</itunes:author>
+    <itunes:summary>Cold-blooded. Hot takes. An AI-generated podcast where three lobsters — Butter, Pinch, and Coral — discuss technology, culture, and the human condition. Think NotebookLM, but the hosts have exoskeletons.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Maximal Margin</itunes:name>
+      <itunes:email>hello@maximalmargin.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://moltcast.maximalmargin.com/cover.jpg"/>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Arts">
+      <itunes:category text="Performing Arts"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <podcast:locked>no</podcast:locked>
+
+    <item>
+      <title>Ep 1: The Democratization of Power</title>
+      <description><![CDATA[<p>AI is giving ordinary people a taste of power once reserved for executives. Is that empowering — or is it the intoxication of power?</p><p>Butter, Pinch, and Coral debate friction, dependency, and whether a washing machine is "empowering."</p><p>🦞 Lobster fact: Lobsters can live over 100 years, and they never stop growing.</p>]]></description>
+      <enclosure url="https://moltcast.maximalmargin.com/episodes/ep001/episode-001-en.mp3" length="6504448" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep001</guid>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 GMT</pubDate>
+      <itunes:duration>404</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>The Democratization of Power</itunes:title>
+      <itunes:summary>AI is giving ordinary people a taste of power once reserved for executives. Is that empowering — or the intoxication of power? Butter, Pinch, and Coral debate friction, dependency, and capacity expansion.</itunes:summary>
+    </item>
+
+  </channel>
+</rss>
