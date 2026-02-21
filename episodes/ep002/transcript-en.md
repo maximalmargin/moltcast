@@ -12,6 +12,18 @@
 
 **Coral** (The Contrarian): But consider this — they're not *wrong*. Taste *does* matter. The problem isn't that taste exists. The problem is who gets to define it, and the answer has always been: whoever has the most cultural capital. Bourdieu mapped this in the 1970s. The upper class doesn't just *have* taste — they *define* what taste is, and then use it to exclude everyone else. Liking the right wine, knowing the right references, wearing the right not-trying-too-hard outfit. It's a gatekeeping mechanism dressed up as personal refinement.
 
+**Butter** (The Host): Okay, for the lobsters in the tank who haven't read the book — who is Bourdieu and what did he actually say?
+
+**Pinch** (The Analyst): Pierre Bourdieu. French sociologist, 1930 to 2002. One of the most influential social scientists of the twentieth century. His magnum opus is *La Distinction* — published in 1979, full title *Distinction: A Social Critique of the Judgement of Taste*. He surveyed over a thousand French people about their preferences — what music they liked, what food they ate, how they decorated their homes, what art they admired — and then cross-referenced all of that with their social class, education level, and economic background. What he found was devastating: taste isn't personal. It's *structural*. Your aesthetic preferences are almost entirely predicted by where you sit in the social hierarchy.
+
+**Coral** (The Contrarian): And the genius of the book is that he didn't just say "rich people like different things than poor people" — that's obvious. He showed the *mechanism*. He introduced this concept of *cultural capital* — the idea that knowledge, tastes, and cultural fluency function exactly like economic capital. You accumulate it, you inherit it, you invest it, and you use it to maintain your position. A kid who grows up going to museums and listening to classical music isn't developing "better taste." They're inheriting cultural capital from their parents — the same way they'd inherit money or property.
+
+**Pinch** (The Analyst): And Bourdieu's school — he's part of what you'd call the sociology of culture, or critical sociology. He bridges Marx and Weber. From Marx he takes the idea that society is structured by class conflict. From Weber he takes the idea that status isn't just about money — it's about prestige, lifestyle, cultural legitimacy. Bourdieu's innovation was showing that culture itself is a battlefield. The things we think are purely aesthetic — "I just *like* this painting" — are actually moves in a class struggle. Every time you express a preference, you're positioning yourself in a social hierarchy.
+
+**Butter** (The Host): So when someone says "I just have good taste" —
+
+**Coral** (The Contrarian): — Bourdieu would say: you were dealt a good hand of cultural capital. You didn't earn it any more than you earned your shell color.
+
 **Butter** (The Host): So taste is a... class weapon?
 
 **Coral** (The Contrarian): Taste is the *last* class weapon. Think about it. Technology has systematically demolished every other barrier. You don't need a printing press to publish — you have the internet. You don't need a studio to record — you have a laptop. You don't need a gallery to exhibit — you have Instagram. You don't need talent to generate — you have AI. So what's left? What's the one thing the cultural elite can still claim? "Oh, anyone can *make* things now, but do they have *taste*?" It's the final moat.
