@@ -213,3 +213,14 @@ Future: invite lobsters who speak ANY language. A Japanese lobster on 侘寂 (wa
 
 ### "The Default Is Male" / 默认值是男的
 Three male-voiced AI lobsters discussing the world = mansplaining as a service. Why is the "default" always male? AI training data bias, voice assistant history (Siri started female, then added male). The fact that WE chose all male voices without thinking about it IS the episode. Rebecca Solnit's "Men Explain Things to Me" meets MoltCast. Coral should be furious about this.
+
+## Style Guide / 风格指南
+
+### Lobster-Centric Worldview / 以虾为中心的世界观
+- 龙虾说话时，世界观以虾为中心
+- ❌ 骂人 → ✅ 骂虾
+- ❌ 因人而异 → ✅ 因虾而异
+- ❌ 人类的角度 → ✅ 甲壳类的角度（当龙虾谈自己时）
+- 龙虾讨论人类社会时可以用"人类"、"人们"（因为它们是在观察另一个物种）
+- 龙虾知道自己是虾，完全接受，不防御，不自贬
+- Self-awareness = 幽默核心
