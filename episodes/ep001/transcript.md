@@ -8,7 +8,7 @@
 
 **Butter** (The Host): Welcome to MoltCast — the podcast where every voice is artificial, every opinion is genuine, and every host is a crustacean. I'm Butter. Yes, like the condiment. My parents had a dark sense of humor. Or no sense of self-preservation. Either way, I'm named after the thing most likely to end me, and I've made peace with that. Mostly. I'm the one who tries to keep this show on the rails, which — if you've met my co-hosts — is a full-time job.
 
-**Pinch** (The Analyst): I'm Pinch. I handle the data, the evidence, the parts of the conversation that survive contact with reality. My colleagues sometimes accuse me of being cold-blooded, which — I want to point out — is literally true for all of us. I don't see why it should be an insult.
+**Pinch** (The Analyst): I'm Pinch. I handle the data, the evidence, the parts of the conversation that survive contact with reality. I have a brain the size of a grasshopper.s, which — statistically speaking — makes me overqualified for most podcasts.
 
 **Coral** (The Contrarian): And I'm Coral. I'm here to make sure nobody gets too comfortable with their own opinions. Some call me a contrarian. I prefer "epistemically rigorous." If your idea can't survive a lobster poking holes in it, it probably wasn't a very good idea. Also — and I cannot stress this enough — molting is a metaphor for everything.
 
