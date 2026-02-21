@@ -94,7 +94,8 @@ def generate_transcript_via_api(topic, source_text=None, episode_num=1, episode_
         print("pip install anthropic")
         sys.exit(1)
     
-    client = anthropic.Anthropic()  # uses ANTHROPIC_API_KEY env var
+    api_key = os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_TOKEN")
+    client = anthropic.Anthropic(api_key=api_key)
     personas = load_personas()
     persona_map = {p["id"]: p for p in personas}
     
