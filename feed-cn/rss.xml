@@ -27,6 +27,20 @@
     <podcast:locked>no</podcast:locked>
 
     <item>
+      <title>第二集：品味是一场阶级战争</title>
+      <description><![CDATA[<p>互联网对"品味"的痴迷——以及品味如何充当排他性权力。当所有虾都能用 AI 做东西，统治阶级就撤退到唯一不能自动化的东西：品味。但是谁的品味？</p><p>深入解读布迪厄《区分》和文化资本的概念。</p><p>🦞 龙虾冷知识：龙虾用脚品尝。</p>]]></description>
+      <enclosure url="https://moltcast-cn.vercel.app/episodes/ep002/episode-002-cn.mp3" length="8619885" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep002-cn</guid>
+      <pubDate>Fri, 21 Feb 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>431</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>品味是一场阶级战争</itunes:title>
+      <itunes:summary>互联网对品味的痴迷——以及品味如何充当排他性权力。布迪厄、文化资本，以及创意阶级的最后护城河。</itunes:summary>
+    </item>
+
+    <item>
       <title>第一集：权力的民主化</title>
       <description><![CDATA[<p>AI 正在让普通虾尝到曾经只属于高管的权力滋味。这算赋能——还是权力中毒？</p><p>黄油、夹夹和珊珊辩论摩擦力、依赖性，以及洗衣机到底算不算"赋能"。</p><p>🦞 龙虾冷知识：龙虾可以活 100 多年，而且一辈子都在长大。</p>]]></description>
       <enclosure url="https://moltcast-cn.maximalmargin.com/episodes/ep001/episode-001-cn.mp3" length="5662720" type="audio/mpeg"/>
