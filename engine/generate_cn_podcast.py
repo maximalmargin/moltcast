@@ -61,8 +61,77 @@ def extract_dialogue(transcript_path: str) -> str:
     return "\n".join(dialogue_lines)
 
 
+# Speaker name to voice ID mapping
+SPEAKER_VOICES = {
+    "黄油": "zh_female_mizaitongxue_v2_saturn_bigtts",
+    "夹夹": "zh_male_dayixiansheng_v2_saturn_bigtts",
+    "珊珊": "zh_male_liufei_v2_saturn_bigtts",
+    # English names
+    "Butter": "zh_female_mizaitongxue_v2_saturn_bigtts",
+    "Pinch": "zh_male_dayixiansheng_v2_saturn_bigtts",
+    "Coral": "zh_male_liufei_v2_saturn_bigtts",
+}
+
+
+def extract_nlp_texts(transcript_path: str) -> list:
+    """Extract structured dialogue list for action=3 (faithful reading)."""
+    with open(transcript_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    lines = content.split("\n")
+    nlp_texts = []
+    in_dialogue = False
+    for line in lines:
+        if line.strip() == "---":
+            if in_dialogue:
+                continue
+            in_dialogue = True
+            continue
+        if not in_dialogue or not line.strip():
+            continue
+        # Match **Speaker**（role）：text or **Speaker**: text
+        match = re.match(r'\*\*([^*]+)\*\*(?:[（(][^）)]*[）)]\s*)?[：:]\s*(.*)', line)
+        if match:
+            speaker_name = match.group(1).strip()
+            # Remove role annotations like （主持虾）
+            speaker_name = re.sub(r'[（(][^）)]*[）)]', '', speaker_name).strip()
+            text = match.group(2).strip()
+            # Remove italic markers
+            text = re.sub(r'\*([^*]+)\*', r'\1', text)
+            voice = SPEAKER_VOICES.get(speaker_name, "zh_female_mizaitongxue_v2_saturn_bigtts")
+            if text:
+                # Split long text into chunks of ~280 chars at sentence boundaries
+                if len(text) > 280:
+                    chunks = _split_text(text, 280)
+                    for chunk in chunks:
+                        nlp_texts.append({"text": chunk, "speaker": voice})
+                else:
+                    nlp_texts.append({"text": text, "speaker": voice})
+    return nlp_texts
+
+
+def _split_text(text: str, max_len: int = 280) -> list:
+    """Split text into chunks at sentence boundaries."""
+    # Split on sentence-ending punctuation
+    sentences = re.split(r'(?<=[.!?。！？])\s*', text)
+    chunks = []
+    current = ""
+    for s in sentences:
+        if not s.strip():
+            continue
+        if len(current) + len(s) + 1 > max_len and current:
+            chunks.append(current.strip())
+            current = s
+        else:
+            current = (current + " " + s).strip() if current else s
+    if current.strip():
+        chunks.append(current.strip())
+    return chunks if chunks else [text[:max_len]]
+
+
 async def generate_podcast(appid: str, access_token: str, text: str, output_path: str,
-                          encoding: str = "mp3"):
+                          encoding: str = "mp3", action: int = 0, nlp_texts: list = None,
+                          speakers: list = None):
     """Generate podcast audio via Volcengine podcast model."""
     headers = {
         "X-Api-App-Id": appid,
@@ -73,16 +142,23 @@ async def generate_podcast(appid: str, access_token: str, text: str, output_path
     }
 
     req_params = {
-        "input_id": f"moltcast_ep003_cn_{int(time.time())}",
-        "input_text": text,
-        "action": 0,
+        "input_id": f"moltcast_{int(time.time())}",
+        "input_text": text if action != 3 else "",
+        "nlp_texts": nlp_texts if action == 3 else None,
+        "action": action,
         "use_head_music": True,
         "use_tail_music": True,
         "input_info": {
             "return_audio_url": False,
             "only_nlp_text": False,
         },
-        "speaker_info": {"random_order": False},
+        "speaker_info": {
+            "random_order": False,
+            "speakers": speakers if speakers else [
+                "zh_male_dayixiansheng_v2_saturn_bigtts",
+                "zh_female_mizaitongxue_v2_saturn_bigtts",
+            ],
+        },
         "audio_config": {
             "format": encoding,
             "sample_rate": 24000,
@@ -158,6 +234,13 @@ async def generate_podcast(appid: str, access_token: str, text: str, output_path
                         data = json.loads(msg.payload.decode())
                         if data.get("is_error"):
                             logger.error(f"Round error: {data}")
+                            # Save partial audio before breaking
+                            if podcast_audio:
+                                partial_path = output_path.replace('.mp3', '-partial.mp3')
+                                os.makedirs(os.path.dirname(partial_path) or ".", exist_ok=True)
+                                with open(partial_path, "wb") as f:
+                                    f.write(podcast_audio)
+                                logger.info(f"💾 Partial audio saved: {partial_path} ({len(podcast_audio)} bytes)")
                             break
                         is_podcast_round_end = True
                         last_round_id = current_round
@@ -173,9 +256,13 @@ async def generate_podcast(appid: str, access_token: str, text: str, output_path
                 if msg.event == EventType.SessionFinished:
                     break
 
-            # FinishConnection
+            # FinishConnection — drain any remaining messages (e.g. UsageResponse)
             await finish_connection(websocket)
-            await wait_for_event(websocket, MsgType.FullServerResponse, EventType.ConnectionFinished)
+            while True:
+                msg = await asyncio.wait_for(receive_message(websocket), timeout=5)
+                logger.info(f"Draining: {msg}")
+                if msg.event == EventType.ConnectionFinished:
+                    break
 
             if is_podcast_round_end:
                 # Save final audio
@@ -206,6 +293,10 @@ async def main():
     parser.add_argument("--output", required=True, help="Output audio path")
     parser.add_argument("--encoding", default="mp3", choices=["mp3", "wav"])
     parser.add_argument("--raw-text", action="store_true", help="Pass transcript as raw text (no parsing)")
+    parser.add_argument("--action", type=int, default=0, choices=[0, 3, 4],
+                       help="0=auto rewrite, 3=faithful dialogue, 4=with prompt")
+    parser.add_argument("--speakers", nargs=2, default=None,
+                       help="Two speaker voice IDs (e.g. zh_male_liufei_v2_saturn_bigtts zh_female_mizaitongxue_v2_saturn_bigtts)")
     args = parser.parse_args()
 
     # Load credentials from env
@@ -215,16 +306,25 @@ async def main():
         logger.error("Set VOLC_PODCAST_APP_ID and VOLC_PODCAST_ACCESS_TOKEN env vars")
         sys.exit(1)
 
-    if args.raw_text:
+    nlp_texts = None
+    if args.action == 3:
+        nlp_texts = extract_nlp_texts(args.transcript)
+        text = ""
+        logger.info(f"Action=3: {len(nlp_texts)} dialogue turns extracted")
+        for i, t in enumerate(nlp_texts[:3]):
+            logger.info(f"  Turn {i}: [{t['speaker'][:20]}] {t['text'][:50]}...")
+    elif args.raw_text:
         with open(args.transcript, "r") as f:
             text = f.read()
     else:
         text = extract_dialogue(args.transcript)
 
-    logger.info(f"Input text length: {len(text)} chars")
-    logger.info(f"First 200 chars: {text[:200]}")
+    if text:
+        logger.info(f"Input text length: {len(text)} chars")
+        logger.info(f"First 200 chars: {text[:200]}")
 
-    await generate_podcast(appid, access_token, text, args.output, args.encoding)
+    await generate_podcast(appid, access_token, text, args.output, args.encoding,
+                          action=args.action, nlp_texts=nlp_texts, speakers=args.speakers)
 
 
 if __name__ == "__main__":

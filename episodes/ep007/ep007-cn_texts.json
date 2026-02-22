@@ -1,0 +1,170 @@
+[
+  {
+    "text": "今天咱们这一期播客要聊的是，为什么大家会对于 AI 工具这么难以抗拒。对其实除了大家都知道的，比如说那种随时可以调用的掌控感。还有一个就是，它的结果的不可预测性，会给你带来像赌博一样的那种刺激。没错，但是其实还有另外一个，就是它会激发你的想象力和创造力，给你带来一种真正的惊喜和乐趣。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "没错没错，这几种东西交织在一起，才让 AI 工具变得这么让人欲罢不能，那我们就直接开始吧。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "首先我们要讲的就是，AI 工具让人上瘾的第一个设计模式，就是这个所谓的权力结构嗯，为什么说跟 AI 互动，会给你带来这种，强烈的掌控感和满足感。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "其实关键就在于，AI 它永远都是立刻服从。没错它不会跟你讨价还价，也不会说，我现在没空，只要你一输入指令它就马上执行，这种瞬间的响应，就会让你感觉好像，意图和行动之间没有任何阻碍。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "这种，呃从发起到执行的无缝衔接，确实会让人觉得很痛快。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "对从神经化学的角度来看，就是当你发号施令。然后AI马上响应的时候，你的大脑会释放多巴胺。哦，这个并不是因为你得到了一个结果，而是因为你在掌控这个结果，每次你收到AI的回复，你都体验到了一次，微小的掌控感的满足。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "明白了，那第二个让人上瘾的设计模式，就是这个可变比率强化，这到底是个什么东西，它是怎么让我们对 AI 欲罢不能的？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "这个原理是斯金纳在五十年代发现的，他做了一个实验就是，呃鸽子。在一个笼子里面，笼子里面有一个杠杆嗯，他发现如果每次鸽子按这个杠杆都会得到食物，那鸽子就会很有规律的去按。但是它不会特别激动。可是如果食物是随机的，就是有时候按好几下才有，有的时候连续按两下就有。那鸽子就会变得，非常疯狂，它会一直不停的按杠杆。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "所以鸽子并不是，真的就是想要食物，它更多的是被这种，奖励的不确定性所吸引。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "完全正确，这就是为什么老虎机会让人上瘾，为什么社交平台的信息流让人上瘾，对，这也是为什么AI让人上瘾，你永远都不知道下一次会不会得到一个特别好的结果，这种期待会让人根本停不下来。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "哎那你说这个，AI 它输出的这种随机性，会怎么样具体的把用户困在这个，赌博的循环里？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "每次你用同样的提示，去请求AI生成内容，它的质量都是波动的，有时好有时普通，你完全不知道下一次会不会产生一个特别惊艳的结果。所以你就会一次一次又一次的去尝试，对，其实你已经不是在使用一个工具了，你是在不停的拉老虎机的拉杆，每一次点击都是一次赌博，你在追逐那个可能会出现的 jackpot。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "那为什么说，和赌场的环境相比，AI 的这种使用场景会让可变比率强化变得更加隐蔽，更加危险？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "因为赌场里面，到处都是很明显的这种刺激。像灯光啊，筹码声啊，你很清楚你在赌博。但是当你使用AI的时候，你就是坐在办公桌前，好像在工作。没错，你觉得你是在提高效率。但其实你的大脑已经不知不觉的被这种，不确定的奖励机制所俘获了，你就会一直反复的去尝试，去追求那个，完美的输出。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "OK，我们现在要讲的就是这两种机制是怎么协同工作的。对，权力感和这种老虎机的这种随机性，是怎么互相配合，把你困在这个循环里的？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "当你使用AI的时候，一方面你觉得自己完全掌控，因为你可以随时指挥它。没错，所以你就会越来越投入。但是另一方面，你又会被这种，可能下一次就会得到一个更好结果的，诱惑所吸引。所以这两种机制结合起来，就会让你像一个老板一样在发号施令。同时又像一个赌徒一样，停不下来。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "所以说很多人，长时间的反复的去调整自己的提示词，就是因为这两种心理在作祟。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "对，人们常常会连续几个小时不断的去微调自己的这个输入。其实并不是因为前面的结果都没有用。而是因为他们始终抱有希望，觉得下一次就能得到那个，绝对完美的答案，就像在赌博的时候，一心想抓到那个头奖一样。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "懂了懂了，然后我们要讲的就是，这个随机性背后的设计决策，嗯。就是这些 AI 工具的开发者，为什么要把这种可变的输出，和这个 temperature 参数放进去？他们明知道这会让人上瘾。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "实际上，这些公司很清楚他们在做什么。这种随机性并不是一个漏洞，而是特意设计的一个功能。如果每次AI都给你一模一样的回答，你很快就会失去兴趣。但是因为它每次都有点不一样，所以你就会不断的回来，想要再试试看。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "所以这个所谓的 temperature 参数，其实就是一个专门用来调整，用户上瘾程度的一个装置。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "没错，temperature 这个设置直接控制了 AI 的随机性，你把它调高一点。输出就会变得更加不可预测。就会更像一个老虎机，对，就会更让人难以抗拒。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "那 AI 里面的这种随机输出，到底是怎么跟创造力挂上钩的？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "随机性其实是AI能够有创造性的一个关键。如果它每次都只能给你同样的答案，那它就只是一个高级的查询工具。只有当它引入了这种变化，它才有可能会产生一些，意想不到的，全新的想法，对，所以有些时候你会真的被它的输出惊艳到。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "所以说，关键不是有没有随机性，而是用户是不是知道有这个机制在影响他们。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "正是如此。问题的关键在于，用户是不是清楚地知道。他们正在参与一个，结果不确定的奖励系统。对，如果用户根本没有意识到这一点，那他们就没有办法主动的，去做出一个理性的选择。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "好的，顺着刚才的思路，我们再来说一下设计责任和行为循环的这个问题。嗯，为什么现在大家对于 AI 工具的上瘾性，几乎没有什么讨论？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "现在的局面真的很奇怪，老虎机这种东西都是有严格的监管的，社交媒体的内容推送也开始慢慢的被审视。但是对于 AI 工具，几乎没有人去把上瘾性当成一个核心的设计问题去看待。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "对，大家都在聊准确率，公平性，安全性。但几乎没有人去问，这个东西是不是在偷偷的操控我的行为？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "没错。这些AI工具，表面上打着提升效率的旗号。但其实它的底层逻辑和那些让人上瘾的消费类产品是一样的。对，它就是要尽可能的抓住你的注意力。根本没有在意是不是在浪费你的时间。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "确实，然后我们要讲的是，除了这个权力感和这个赌博机制之外，还有什么东西让AI工具这么吸引人？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "其实最根本的魔力就是，AI 可以把你头脑中的一个模糊的念头。瞬间变成实实在在的东西。对，你写一句诗它马上给你生成一首诗，你描述一个画面它马上给你画出来，你提一个问题它会给你一个，全新的看待这个世界的角度。这种感觉就像魔法一样，经常会让人忘了怎么停下来。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "所以说，AI 的这个创造性的输出，会带来一种跟上瘾完全不同的满足感？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "可以这么说，它更像是一种创造的快乐。对，因为你可以不断的去探索，不断的去发现。所以它不仅仅是让人沉迷，它本身就是非常有趣，非常有吸引力的。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "那如果这三种心理动力，权力感，赌博机制和创造性的惊喜，它们三个同时起作用。会对用户造成什么影响？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "实际上，这三种力量会互相叠加，你根本分不清，你到底是被哪一种驱动力拉着走的。你每次去使用AI，可能既是在追求那种掌控的快感，又是在期待那个随机的奖励。同时也是真的被那种，创意的爆发所吸引。对，这种组合几乎是，最容易让人沉迷的一个组合了。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "怪不得有人说，使用 AI 的时候感觉自己像是同时在当老板，赌徒和艺术家，哈哈，你完全不知道哪个动机才是主导。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "是的，甚至有网友形容。我再也不能知道我是在幻觉，精神病，还是真的在蓬勃发展。对，这就是 AI 给你带来的，让人既兴奋又迷惑的心理状态。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "OK，最后我们来讨论一下，这个元反思和龙虾冷知识。就是，我们作为 AI 生成的内容，MoltCast 本身是不是也在利用老虎机效应，让大家一集接着一集的听下去？",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "完全没错，你在听我们节目的时候，也不知道下一集会不会有更精彩的内容，或者更搞笑的梗，对，你也会被这种期待所驱动，不知不觉就成为了一个拉杠杆的人，哈哈，欢迎来到赌场。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  },
+  {
+    "text": "好吧，今天我们聊了AI工具让人欲罢不能的各种原因，其实说白了，就是抓住了大家的这种对控制的渴望，对惊喜的追求，还有对创造的热情。",
+    "speaker": "zh_female_mizaitongxue_v2_saturn_bigtts"
+  },
+  {
+    "text": "行啦，这就是本期播客的全部内容啦，然后感谢大家的收听，咱们下次见，拜拜拜拜。",
+    "speaker": "zh_male_dayixiansheng_v2_saturn_bigtts"
+  }
+]
