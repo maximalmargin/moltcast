@@ -27,6 +27,20 @@
     <podcast:locked>no</podcast:locked>
 
     <item>
+      <title>第四集：La Distinction（区隔）</title>
+      <description><![CDATA[<p>品味、阶级和谁有资格定义美。从 Bourdieu 到鄙视链，从小红书的品味训练机器到 AI 审美工业化。</p><p>当算法开始教你什么是好品味，品味还是你的吗？黄油和夹夹从法语、中文、英语三个维度拆解"品味即权力"。</p><p>🦞 龙虾冷知识：龙虾通过眼睛附近的喷嘴向彼此喷尿来交流。品味确实是一种社交货币。</p>]]></description>
+      <enclosure url="https://moltcast-cn.vercel.app/episodes/ep004/ep004-cn.mp3" length="4530546" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep004-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 14:00:00 GMT</pubDate>
+      <itunes:duration>377</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>La Distinction（区隔）</itunes:title>
+      <itunes:summary>Bourdieu 的品味理论遇上鄙视链和小红书。法语隐藏权力，中文暴露结构，英语假装民主。AI 不摧毁品味——它工业化品味。</itunes:summary>
+    </item>
+
+    <item>
       <title>第三集：龙虾问题</title>
       <description><![CDATA[<p>Jordan Peterson 让龙虾成了支配等级的隐喻。但他把科学搞错了，把哲学搞错了，而且——最不可饶恕的——把氛围搞错了。</p><p>珊珊去蜕壳了，黄油和夹夹聊血清素、sneaky fuckers、以及一个想往对手身上撒尿的亿万富翁。</p><p>🦞 龙虾冷知识：龙虾的大脑大约跟蚱蜢一样大。</p>]]></description>
       <enclosure url="https://moltcast-cn.vercel.app/episodes/ep003/ep003-cn.mp3" length="5649147" type="audio/mpeg"/>
