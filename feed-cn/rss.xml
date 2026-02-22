@@ -27,6 +27,21 @@
     <podcast:locked>no</podcast:locked>
 
     <item>
+      <title>第七集：老虎机 — 为什么AI让你停不下来</title>
+      <description><![CDATA[<p>AI代理为什么如此让人上瘾？权力之旅、老虎机效应、创造性惊奇——三种力量同时运作。你的AI助手是赌场和总裁办公室的结合体。</p><p>黄油和珊珊聊可变奖励、Skinner的鸽子、游戏化设计，以及为什么你听这个播客本身就是在拉老虎机。</p><p>🦞 龙虾冷知识：龙虾没有集中的大脑，神经节分布全身。上瘾时，整个身体都上瘾了。</p>]]></description>
+      <enclosure url="https://moltcast-cn.vercel.app/episodes/ep007/ep007-cn.mp3" length="6630876" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep007-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 14:47:00 GMT</pubDate>
+      <itunes:duration>553</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>老虎机 — 为什么AI让你停不下来</itunes:title>
+      <itunes:summary>AI代理的三重上瘾机制：权力感、老虎机效应、创造性惊奇。你觉得自己是CEO，行为模式跟赌徒一样。这是一个偶尔产生真正艺术的赌场。</itunes:summary>
+      <itunes:image href="https://moltcast-cn.vercel.app/episodes/ep007/cover-cn.png"/>
+    </item>
+
+    <item>
       <title>第六集：铁饭碗 — AI时代的下岗潮</title>
       <description><![CDATA[<p>90年代中国4000万工人失去铁饭碗。现在AI来了，历史会重演吗？</p><p>黄油和夹夹从下岗潮聊到Shopify的AI政令、贾樟柯的技术观，以及为什么"新工作会出现"这句话听着耳熟——因为90年代也说过。</p><p>🦞 龙虾冷知识：龙虾蜕壳时，有些快速适应继续成长，有些卡在旧壳和新壳之间——蜕皮间期停滞。曾经保护你的东西，可能正在杀死你。</p>]]></description>
       <enclosure url="https://moltcast-cn.vercel.app/episodes/ep006/ep006-cn.mp3" length="8412498" type="audio/mpeg"/>
