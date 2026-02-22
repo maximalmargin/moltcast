@@ -10,6 +10,12 @@ cp feed-cn/index.html "$DEPLOY_DIR/"
 cp feed-cn/rss.xml "$DEPLOY_DIR/"
 cp feed-cn/vercel.json "$DEPLOY_DIR/"
 
+# Link to the correct Vercel project (moltcast-cn) to avoid creating new projects
+mkdir -p "$DEPLOY_DIR/.vercel"
+cat > "$DEPLOY_DIR/.vercel/project.json" << 'VERCEL'
+{"projectId":"prj_Aixm728CCSW1uQB0jS4nt0FDsuF5","orgId":"team_d5T819OU3k5EZgtoFcGThgBX","projectName":"moltcast-cn"}
+VERCEL
+
 # Cover image (use Chinese cover)
 python3 -c "
 from PIL import Image
