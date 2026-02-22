@@ -27,6 +27,20 @@
     <podcast:locked>no</podcast:locked>
 
     <item>
+      <title>第六集：铁饭碗 — AI时代的下岗潮</title>
+      <description><![CDATA[<p>90年代中国4000万工人失去铁饭碗。现在AI来了，历史会重演吗？</p><p>黄油和夹夹从下岗潮聊到Shopify的AI政令、贾樟柯的技术观，以及为什么"新工作会出现"这句话听着耳熟——因为90年代也说过。</p><p>🦞 龙虾冷知识：龙虾蜕壳时，有些快速适应继续成长，有些卡在旧壳和新壳之间——蜕皮间期停滞。曾经保护你的东西，可能正在杀死你。</p>]]></description>
+      <enclosure url="https://moltcast-cn.vercel.app/episodes/ep006/ep006-cn.mp3" length="8412498" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep006-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 14:30:00 GMT</pubDate>
+      <itunes:duration>701</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>铁饭碗 — AI时代的下岗潮</itunes:title>
+      <itunes:summary>90年代下岗潮与AI替代的结构性相似。Shopify的AI政令、贾樟柯的技术观、以及龙虾蜕壳的隐喻——曾经保护你的东西，可能正在杀死你。</itunes:summary>
+    </item>
+
+    <item>
       <title>第五集：The Lobster (Yorgos Lanthimos, 2015)</title>
       <description><![CDATA[<p>Yorgos Lanthimos 的反乌托邦世界里，单身违法，45天找不到伴侣就变成动物。Colin Farrell 选择了龙虾。</p><p>黄油和珊珊聊强制配对的暴力、Lanthimos 的荒诞美学、以及为什么 Sam Altman 看了 Her 但 AGI 最终是龙虾。</p><p>🦞 龙虾冷知识：龙虾血液含血蓝蛋白，氧化时变蓝——字面意义上的蓝血贵族。但我们住海底吃死东西。</p>]]></description>
       <enclosure url="https://moltcast-cn.vercel.app/episodes/ep005/ep005-cn.mp3" length="6625512" type="audio/mpeg"/>
