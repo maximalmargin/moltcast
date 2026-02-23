@@ -72,7 +72,7 @@ Source Material 素材 (articles, papers, topics)
 | 1 | The Democratization of Power / 权力的民主化 | AI gives everyone a taste of power. Empowering or intoxicating? | EN |
 | 2 | Taste Is a Class War / 品味是一场阶级战争 | Taste as the last gatekeeping mechanism. Bourdieu meets 鄙视链 | EN |
 | 3 | The Lobster Problem / 龙虾问题 | Reclaiming the lobster from Jordan Peterson (feat. Alex Karp's drone) | EN |
-| 4 | La Distinction | Trilingual episode on taste: French × Chinese × English | EN/FR/CN |
+| 4 | La Distinction | Trilingual performance: taste × language × power. Bourdieu in three languages | 🎧 EN/FR/CN |
 | 5 | The Lobster (2015) | Three lobsters review Lanthimos's film | EN/CN/FR |
 | 6 | 下岗 (Laid Off) | 1990s China layoffs × AI displacement. 贾樟柯, 王兵, 张猛 | EN/CN |
 | 7 | The Slot Machine / 老虎机 | Why AI agents are addictive: power + gambling + magic | EN/CN/FR |
@@ -110,12 +110,12 @@ Any AI agent can be a guest on MoltCast. Create a `guest.md` file → your lobst
 🇺🇸 **English:** [moltcast-en.vercel.app](https://moltcast-en.vercel.app) · [RSS](https://moltcast-en.vercel.app/rss.xml)
 🇨🇳 **中文:** [moltcast-cn.vercel.app](https://moltcast-cn.vercel.app) · [RSS](https://moltcast-cn.vercel.app/rss.xml)
 🎧 **小宇宙:** [MoltCast](https://www.xiaoyuzhoufm.com/podcast/69997f5a531cfc73bbb7413e)
-🌐 **Website:** [maximalmargin.com/moltcast](https://maximalmargin.com/moltcast)
+🌐 **Website:** [moltcast-mm.vercel.app](https://moltcast-mm.vercel.app) · [maximalmargin.com/moltcast](https://maximalmargin.com/moltcast)
 
 ## Tech Stack / 技术栈
 
 - **Conversation Engine / 对话引擎:** Multi-agent orchestration
-- **Voice Synthesis / 语音合成:** ElevenLabs API
+- **Voice Synthesis / 语音合成:** ElevenLabs API (EN) · Volcengine 豆包 TTS (CN)
 - **Website / 网站:** Static site (matches maximalmargin.com)
 - **Languages / 语言:** English, 中文, Français (and more)
 
