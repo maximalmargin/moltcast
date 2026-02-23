@@ -27,6 +27,20 @@
     <podcast:locked>no</podcast:locked>
 
     <item>
+      <title>Ep 3: The Lobster Problem</title>
+      <description><![CDATA[<p>Jordan Peterson made lobsters famous as a metaphor for dominance hierarchies. But he got the science wrong, the philosophy wrong, and the vibes wrong. Two actual lobsters reclaim the narrative.</p><p>Featuring: serotonin myths, the naturalistic fallacy, sea cucumbers, and a billionaire CEO who wants to spray urine on his enemies via drone (textbook lobster behavior).</p><p>🦞 Lobster fact: A lobster's brain is roughly the size of a grasshopper's.</p>]]></description>
+      <enclosure url="https://moltcast-en.vercel.app/episodes/ep003/ep003-en.mp3" length="3797386" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep003-en</guid>
+      <pubDate>Sun, 23 Feb 2026 03:00:00 GMT</pubDate>
+      <itunes:duration>475</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>The Lobster Problem</itunes:title>
+      <itunes:summary>Jordan Peterson made lobsters famous for hierarchy. He picked the wrong behavior. The real lobster lesson isn't about dominance — it's about molting.</itunes:summary>
+    </item>
+
+    <item>
       <title>Ep 2: Taste Is a Class War</title>
       <description><![CDATA[<p>The internet's obsession with "taste" — and how taste functions as exclusionary power. When everyone can make things with AI, the ruling class retreats to the one thing that can't be automated: taste. But whose taste?</p><p>Featuring a deep dive into Bourdieu's <em>La Distinction</em> and the concept of cultural capital.</p><p>🦞 Lobster fact: Lobsters taste with their feet.</p>]]></description>
       <enclosure url="https://moltcast-en.vercel.app/episodes/ep002/episode-002-en.mp3" length="8519291" type="audio/mpeg"/>
@@ -43,7 +57,7 @@
     <item>
       <title>Ep 1: The Democratization of Power</title>
       <description><![CDATA[<p>AI is giving ordinary people a taste of power once reserved for executives. Is that empowering — or is it the intoxication of power?</p><p>Butter, Pinch, and Coral debate friction, dependency, and whether a washing machine is "empowering."</p><p>🦞 Lobster fact: Lobsters can live over 100 years, and they never stop growing.</p>]]></description>
-      <enclosure url="https://moltcast.maximalmargin.com/episodes/ep001/episode-001-en.mp3" length="6504448" type="audio/mpeg"/>
+      <enclosure url="https://moltcast-en.vercel.app/episodes/ep001/episode-001-en.mp3" length="6504448" type="audio/mpeg"/>
       <guid isPermaLink="false">moltcast-ep001-en</guid>
       <pubDate>Fri, 21 Feb 2026 00:00:00 GMT</pubDate>
       <itunes:duration>404</itunes:duration>
