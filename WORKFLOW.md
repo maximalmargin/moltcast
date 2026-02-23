@@ -5,18 +5,18 @@
 | Character | Role | Emoji | Personality |
 |-----------|------|-------|-------------|
 | **Butter** 黄油 | The Host | 🦞 | Warm, funny, grounding. Audience surrogate. |
-| **Coral** 夹夹 | The Contrarian | 🦞 | Provocative, philosophical. Professional devil's advocate. |
-| **Pinch** 珊珊 | The Analyst | 🦞 | Cold-blooded empiricist. Data-driven, dry wit. |
+| **Pinch** 夹夹 | The Analyst | 🦞 | Cold-blooded empiricist. Data-driven, dry wit. |
+| **Coral** 珊珊 | The Contrarian | 🦞 | Provocative, philosophical. Professional devil's advocate. |
 
 ## TTS 音色映射
 
-### 中文版 — 火山引擎大模型 TTS
+### 中文版 — 豆包语音合成大模型
 
 | Character | 音色名称 | Voice ID |
 |-----------|---------|----------|
 | 黄油 (Butter) | 爽快思思 | `zh_female_shuangkuaisisi_moon_bigtts` |
-| 夹夹 (Coral) | 解说小明 | `zh_male_jieshuoxiaoming_moon_bigtts` |
-| 珊珊 (Pinch) | 率真小伙 | `ICL_zh_male_shuaizhenxiaohuo_tob` |
+| 夹夹 (Pinch) | 解说小明 | `zh_male_jieshuoxiaoming_moon_bigtts` |
+| 珊珊 (Coral) | 率真小伙 | `ICL_zh_male_shuaizhenxiaohuo_tob` |
 
 **API**: `https://openspeech.bytedance.com/api/v1/tts` (HTTP POST)
 **Auth**: `Authorization: Bearer;{VOLC_PODCAST_ACCESS_TOKEN}`
@@ -28,8 +28,15 @@
 
 用于中文播客自然对话风格（模型自动改写文本）。
 
+**文档**: https://www.volcengine.com/docs/6561/1668014?lang=zh
 **API**: `wss://openspeech.bytedance.com/api/v3/sami/podcasttts` (WebSocket)
-**Speaker**: 固定双人（大意先生 + 米在同学），不可自定义
+**Speaker**: 固定双人，不可自定义
+
+| Speaker | Voice ID |
+|---------|----------|
+| 大意先生 | `zh_male_dayixiansheng_v2_saturn_bigtts` |
+| 米在同学 | `zh_female_mizaitongxue_v2_saturn_bigtts` |
+
 **Credentials**: 同上 (`VOLC_PODCAST_*`)
 **用途**: ep3+ 中文版 (generate_cn_podcast.py)
 
@@ -79,12 +86,12 @@ ep004-en.mp3
 
 **Script**: `engine/generate_ep004_en.py`
 
-### 标准中文集 — 大模型 TTS (ep1-2)
+### 标准中文集 — 豆包语音合成大模型 (ep1-2)
 
 ```
 transcript-cn.md (中文稿)
     ↓ parse by **Speaker**: lines
-    ↓ 火山引擎大模型 TTS (黄油=爽快思思, 夹夹=解说小明)
+    ↓ 豆包语音合成大模型 (黄油=爽快思思, 夹夹=解说小明)
     ↓ pydub concat (500ms speaker gap, 300ms line gap)
 ep0XX-cn.mp3
 ```
@@ -195,10 +202,10 @@ cd ~/repos/moltcast/site && vercel --yes --prod
 ## 注意事项
 
 1. **Segments 缓存**: `--skip-existing` 跳过已有分段，节省 API credits
-2. **中文字数限制**: 火山引擎大模型 TTS 单次 ≤1024 bytes UTF-8 (~300字)，脚本自动按句分割
+2. **中文字数限制**: 豆包语音合成大模型单次 ≤1024 bytes UTF-8 (~300字)，脚本自动按句分割
 3. **ElevenLabs v3**: 支持 audio tags `[laughs]` `[sighs]` `[short pause]` 等
 4. **Crossfade**: 80ms triangular，失败时 fallback 到 simple concat
-5. **播客大模型 vs 大模型 TTS**: 播客大模型会改写文本（更自然），大模型 TTS 逐字朗读（更可控）
+5. **播客大模型 vs 语音合成大模型**: 播客大模型会改写文本（更自然），语音合成大模型逐字朗读（更可控）
 6. **Jules 仅用于法语集**: 非法语集 Coral 用 Charlie
 
 ## Style Guide / 风格指南
