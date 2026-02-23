@@ -967,6 +967,26 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+    // Transcript preload cache
+    const transcriptCache = {};
+
+    async function fetchTranscript(url) {
+      if (transcriptCache[url]) return transcriptCache[url];
+      const res = await fetch(url);
+      const html = await res.text();
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const body = doc.querySelector('.transcript-body');
+      transcriptCache[url] = body ? body.innerHTML : '';
+      return transcriptCache[url];
+    }
+
+    // Preload visible transcripts after page settles
+    setTimeout(() => {
+      document.querySelectorAll('.ep-transcript').forEach(btn => {
+        fetchTranscript(btn.dataset.transcript);
+      });
+    }, 1000);
+
     // Transcript expand/collapse
     document.querySelectorAll('.ep-transcript').forEach(btn => {
       btn.addEventListener('click', async () => {
@@ -980,12 +1000,10 @@
         }
 
         try {
-          const res = await fetch(btn.dataset.transcript);
-          const html = await res.text();
-          const doc = new DOMParser().parseFromString(html, 'text/html');
-          const body = doc.querySelector('.transcript-body');
-          panel.innerHTML = '<div class="transcript-panel-inner">' + (body ? body.innerHTML : '') + '</div>';
-          requestAnimationFrame(() => panel.classList.add('open'));
+          const content = await fetchTranscript(btn.dataset.transcript);
+          panel.innerHTML = '<div class="transcript-panel-inner">' + content + '</div>';
+          panel.offsetHeight;
+          panel.classList.add('open');
         } catch (e) {
           panel.innerHTML = '<div class="transcript-panel-inner"><p>Failed to load transcript.</p></div>';
           panel.classList.add('open');
