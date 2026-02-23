@@ -155,7 +155,7 @@ cd ~/repos/moltcast/site && vercel --yes --prod
 - CN: `https://moltcast-mm.vercel.app/rss-cn.xml`
 
 **平台发布**:
-- 小宇宙: https://www.xiaoyuzhoufm.com/podcast/67b7eb5e04e770c1d2e73781
+- 小宇宙: https://www.xiaoyuzhoufm.com/podcast/69997f5a531cfc73bbb7413e
 - Spotify: 通过 RSS 自动抓取
 
 ## 发布新集 Checklist

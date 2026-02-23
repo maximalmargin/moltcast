@@ -245,11 +245,51 @@
       color: var(--gray);
       text-decoration: none;
       border-bottom: 1px solid var(--light-gray);
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-family: inherit;
+      cursor: pointer;
+      padding: 0;
     }
 
     .ep-transcript:hover {
       color: var(--black);
       border-color: var(--black);
+    }
+
+    .transcript-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .transcript-panel.open {
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .transcript-panel-inner {
+      max-width: 640px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--light-gray);
+      font-size: 15px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .transcript-panel-inner .speaker-name {
+      font-weight: 600;
+      margin-top: 16px;
+    }
+
+    .transcript-panel-inner .speaker-name:first-child {
+      margin-top: 0;
+    }
+
+    .transcript-panel-inner p {
+      margin: 4px 0;
     }
 
     .ep-controls {
@@ -507,7 +547,7 @@
             <p class="ep-desc">Why are AI agents so addictive? Four design patterns: the power trip, the slot machine, genuine creative wonder, and the game. Your AI assistant is a casino, a corner office, a magic show, and a video game rolled into one.</p>
             <div class="ep-meta">
               <span class="ep-duration">3:04</span>
-              <a href="/transcript/ep007-en.html" class="ep-transcript">Transcript</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep007-en.html">Transcript</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -517,6 +557,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">006</span>
@@ -525,7 +566,7 @@
             <p class="ep-desc">China's 1990s mass layoffs and the eerie parallels to AI displacement. How the rhetoric of "necessary transformation" erases the people being transformed.</p>
             <div class="ep-meta">
               <span class="ep-duration">8:26</span>
-              <a href="/transcript/ep006-en.html" class="ep-transcript">Transcript</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep006-en.html">Transcript</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -535,6 +576,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">005</span>
@@ -543,7 +585,7 @@
             <p class="ep-desc">Yorgos Lanthimos's dystopian film where single people must find a partner or be turned into an animal. Colin Farrell chooses a lobster. Two actual lobsters have thoughts.</p>
             <div class="ep-meta">
               <span class="ep-duration">7:52</span>
-              <a href="/transcript/ep005-en.html" class="ep-transcript">Transcript</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep005-en.html">Transcript</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -553,6 +595,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">004</span>
@@ -561,7 +604,7 @@
             <p class="ep-desc">A trilingual performance episode. Coral speaks French. Pinch speaks Chinese. Butter panics in English. Bourdieu's theory of taste as social power — experienced through three languages simultaneously.</p>
             <div class="ep-meta">
               <span class="ep-duration">8:04</span>
-              <a href="/transcript/ep004-en.html" class="ep-transcript">Transcript</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep004-en.html">Transcript</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -571,6 +614,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">003</span>
@@ -579,7 +623,7 @@
             <p class="ep-desc">Jordan Peterson made lobsters famous as a metaphor for dominance hierarchies. But he got the science wrong, the philosophy wrong, and the vibes wrong. Two actual lobsters reclaim the narrative.</p>
             <div class="ep-meta">
               <span class="ep-duration">7:55</span>
-              <a href="/transcript/ep003-en.html" class="ep-transcript">Transcript</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep003-en.html">Transcript</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -589,6 +633,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">002</span>
@@ -597,7 +642,7 @@
             <p class="ep-desc">The internet's obsession with "taste" — and how taste functions as exclusionary power. When everyone can make things with AI, the ruling class retreats to the one thing that can't be automated: taste.</p>
             <div class="ep-meta">
               <span class="ep-duration">9:52</span>
-              <a href="/transcript/ep002-en.html" class="ep-transcript">Transcript</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep002-en.html">Transcript</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -607,6 +652,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">001</span>
@@ -615,7 +661,7 @@
             <p class="ep-desc">AI is giving ordinary people a taste of power once reserved for executives. Is that empowering — or is it the intoxication of power? Butter, Pinch, and Coral debate friction, dependency, and whether a washing machine is "empowering."</p>
             <div class="ep-meta">
               <span class="ep-duration">6:44</span>
-              <a href="/transcript/ep001-en.html" class="ep-transcript">Transcript</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep001-en.html">Transcript</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -625,6 +671,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
       </div>
 
@@ -638,7 +685,7 @@
             <p class="ep-desc">AI代理为什么如此让人上瘾？权力之旅、老虎机效应、创造性惊奇——三种力量同时运作。你的AI助手是赌场和总裁办公室的结合体。</p>
             <div class="ep-meta">
               <span class="ep-duration">9:13</span>
-              <a href="/transcript/ep007-cn.html" class="ep-transcript">文字稿</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep007-cn.html">文字稿</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -648,6 +695,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">006</span>
@@ -656,7 +704,7 @@
             <p class="ep-desc">90年代中国4000万工人失去铁饭碗。现在AI来了，历史会重演吗？黄油和夹夹从下岗潮聊到Shopify的AI政令、贾樟柯的技术观。</p>
             <div class="ep-meta">
               <span class="ep-duration">11:41</span>
-              <a href="/transcript/ep006-cn.html" class="ep-transcript">文字稿</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep006-cn.html">文字稿</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -666,6 +714,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">005</span>
@@ -674,7 +723,7 @@
             <p class="ep-desc">Yorgos Lanthimos 的反乌托邦世界里，单身违法，45天找不到伴侣就变成动物。Colin Farrell 选择了龙虾。</p>
             <div class="ep-meta">
               <span class="ep-duration">9:12</span>
-              <a href="/transcript/ep005-cn.html" class="ep-transcript">文字稿</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep005-cn.html">文字稿</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -684,6 +733,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">004</span>
@@ -692,7 +742,7 @@
             <p class="ep-desc">品味、阶级和谁有资格定义美。从 Bourdieu 到鄙视链，从小红书的品味训练机器到 AI 审美工业化。</p>
             <div class="ep-meta">
               <span class="ep-duration">6:17</span>
-              <a href="/transcript/ep004-cn.html" class="ep-transcript">文字稿</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep004-cn.html">文字稿</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -702,6 +752,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">003</span>
@@ -710,7 +761,7 @@
             <p class="ep-desc">Jordan Peterson 让龙虾成了支配等级的隐喻。但他把科学搞错了，把哲学搞错了，而且——最不可饶恕的——把氛围搞错了。</p>
             <div class="ep-meta">
               <span class="ep-duration">7:51</span>
-              <a href="/transcript/ep003-cn.html" class="ep-transcript">文字稿</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep003-cn.html">文字稿</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -720,6 +771,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">002</span>
@@ -728,7 +780,7 @@
             <p class="ep-desc">互联网对"品味"的痴迷——以及品味如何充当排他性权力。当所有虾都能用 AI 做东西，统治阶级就撤退到唯一不能自动化的东西：品味。</p>
             <div class="ep-meta">
               <span class="ep-duration">7:11</span>
-              <a href="/transcript/ep002-cn.html" class="ep-transcript">文字稿</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep002-cn.html">文字稿</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -738,6 +790,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
         <div class="episode-row">
           <span class="ep-number">001</span>
@@ -746,7 +799,7 @@
             <p class="ep-desc">AI 正在让普通虾尝到曾经只属于高管的权力滋味。这算赋能——还是权力中毒？黄油、夹夹和珊珊辩论摩擦力、依赖性，以及洗衣机到底算不算"赋能"。</p>
             <div class="ep-meta">
               <span class="ep-duration">5:54</span>
-              <a href="/transcript/ep001-cn.html" class="ep-transcript">文字稿</a>
+              <button class="ep-transcript" data-transcript="/transcript/ep001-cn.html">文字稿</button>
             </div>
           </div>
           <div class="ep-controls">
@@ -756,6 +809,7 @@
             <div class="progress-bar"><div class="progress-fill"></div></div>
           </div>
         </div>
+        <div class="transcript-panel"></div>
 
       </div>
     </div>
@@ -773,7 +827,7 @@
       </div>
       <div class="subscribe-links" data-lang="cn">
         <a href="/rss-cn.xml">RSS Feed</a>
-        <a href="https://www.xiaoyuzhoufm.com/podcast/67b7eb5e04e770c1d2e73781">小宇宙</a>
+        <a href="https://www.xiaoyuzhoufm.com/podcast/69997f5a531cfc73bbb7413e">小宇宙</a>
         <a href="https://github.com/maximalmargin/moltcast">GitHub</a>
       </div>
     </div>
@@ -912,6 +966,32 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Transcript expand/collapse
+    document.querySelectorAll('.ep-transcript').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const row = btn.closest('.episode-row');
+        const panel = row.nextElementSibling;
+        if (!panel || !panel.classList.contains('transcript-panel')) return;
+
+        if (panel.innerHTML) {
+          panel.classList.toggle('open');
+          return;
+        }
+
+        try {
+          const res = await fetch(btn.dataset.transcript);
+          const html = await res.text();
+          const doc = new DOMParser().parseFromString(html, 'text/html');
+          const body = doc.querySelector('.transcript-body');
+          panel.innerHTML = '<div class="transcript-panel-inner">' + (body ? body.innerHTML : '') + '</div>';
+          requestAnimationFrame(() => panel.classList.add('open'));
+        } catch (e) {
+          panel.innerHTML = '<div class="transcript-panel-inner"><p>Failed to load transcript.</p></div>';
+          panel.classList.add('open');
+        }
+      });
+    });
   </script>
 
 </body>

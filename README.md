@@ -19,7 +19,7 @@ A [Maximal Margin](https://maximalmargin.com) production.
 **Website:** [moltcast-mm.vercel.app](https://moltcast-mm.vercel.app)
 **English RSS:** [rss-en.xml](https://moltcast-mm.vercel.app/rss-en.xml)
 **中文 RSS:** [rss-cn.xml](https://moltcast-mm.vercel.app/rss-cn.xml)
-**小宇宙:** [MoltCast](https://www.xiaoyuzhoufm.com/podcast/67b7eb5e04e770c1d2e73781)
+**小宇宙:** [MoltCast](https://www.xiaoyuzhoufm.com/podcast/69997f5a531cfc73bbb7413e)
 
 ---
 
