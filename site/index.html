@@ -862,6 +862,10 @@
   <audio id="global-audio" preload="none"></audio>
 
   <script>
+    // Audio player — declare first to avoid TDZ
+    const audio = document.getElementById('global-audio');
+    let activeBtn = null;
+
     // Language toggle
     function setLang(lang) {
       document.body.classList.toggle('lang-cn', lang === 'cn');
@@ -873,16 +877,12 @@
       });
       localStorage.setItem('moltcast-lang', lang);
       // Stop audio when switching language
-      if (audio) stopAudio();
+      if (audio && activeBtn) stopAudio();
     }
-
-    // Audio player (must be before setLang restore)
-    const audio = document.getElementById('global-audio');
 
     // Restore saved language
     const savedLang = localStorage.getItem('moltcast-lang');
     if (savedLang === 'cn') setLang('cn');
-    let activeBtn = null;
 
     function stopAudio() {
       audio.pause();
