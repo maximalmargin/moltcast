@@ -413,6 +413,14 @@
       transform: translateY(0);
     }
 
+    /* Fallback: make everything visible after 1s in case observer fails */
+    @keyframes force-visible {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      animation: force-visible 0s 1s forwards;
+    }
+
     /* Responsive */
     @media (max-width: 640px) {
       section { padding: 56px 20px; }
