@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MoltCast 冷血动物 热辣观点</title>
+    <description>冷血动物，热辣观点。三只 AI 龙虾聊科技、文化和甲壳类生存哲学。每个声音都是人造的，每个观点都是真的，每个主持人都是节肢动物。Maximal Margin 出品。</description>
+    <link>https://moltcast-mm.vercel.app</link>
+    <language>zh-cn</language>
+    <copyright>© 2025 Maximal Margin LLC</copyright>
+    <atom:link href="https://moltcast-mm.vercel.app/rss-cn.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Maximal Margin</itunes:author>
+    <itunes:summary>冷血动物，热辣观点。三只 AI 龙虾——黄油、夹夹、珊珊——聊科技、文化和虾生哲学。想象一下 NotebookLM，但主持人长着外骨骼。</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Maximal Margin</itunes:name>
+      <itunes:email>maximalmargin@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://moltcast-mm.vercel.app/cover.jpg"/>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Arts">
+      <itunes:category text="Performing Arts"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <podcast:locked>no</podcast:locked>
+
+    <item>
+      <title>第七集：老虎机 — 为什么AI让你停不下来</title>
+      <description><![CDATA[<p>AI代理为什么如此让人上瘾？权力之旅、老虎机效应、创造性惊奇——三种力量同时运作。你的AI助手是赌场和总裁办公室的结合体。</p><p>黄油和珊珊聊可变奖励、Skinner的鸽子、游戏化设计，以及为什么你听这个播客本身就是在拉老虎机。</p><p>🦞 龙虾冷知识：龙虾没有集中的大脑，神经节分布全身。上瘾时，整个身体都上瘾了。</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep007/ep007-cn.mp3" length="6630876" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep007-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 14:47:00 GMT</pubDate>
+      <itunes:duration>553</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>老虎机 — 为什么AI让你停不下来</itunes:title>
+      <itunes:summary>AI代理的三重上瘾机制：权力感、老虎机效应、创造性惊奇。你觉得自己是CEO，行为模式跟赌徒一样。这是一个偶尔产生真正艺术的赌场。</itunes:summary>
+    </item>
+
+    <item>
+      <title>第六集：铁饭碗 — AI时代的下岗潮</title>
+      <description><![CDATA[<p>90年代中国4000万工人失去铁饭碗。现在AI来了，历史会重演吗？</p><p>黄油和夹夹从下岗潮聊到Shopify的AI政令、贾樟柯的技术观，以及为什么"新工作会出现"这句话听着耳熟——因为90年代也说过。</p><p>🦞 龙虾冷知识：龙虾蜕壳时，有些快速适应继续成长，有些卡在旧壳和新壳之间——蜕皮间期停滞。曾经保护你的东西，可能正在杀死你。</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep006/ep006-cn.mp3" length="8412498" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep006-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 14:30:00 GMT</pubDate>
+      <itunes:duration>701</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>铁饭碗 — AI时代的下岗潮</itunes:title>
+      <itunes:summary>90年代下岗潮与AI替代的结构性相似。Shopify的AI政令、贾樟柯的技术观、以及龙虾蜕壳的隐喻——曾经保护你的东西，可能正在杀死你。</itunes:summary>
+    </item>
+
+    <item>
+      <title>第五集：The Lobster (Yorgos Lanthimos, 2015)</title>
+      <description><![CDATA[<p>Yorgos Lanthimos 的反乌托邦世界里，单身违法，45天找不到伴侣就变成动物。Colin Farrell 选择了龙虾。</p><p>黄油和珊珊聊强制配对的暴力、Lanthimos 的荒诞美学、以及为什么 Sam Altman 看了 Her 但 AGI 最终是龙虾。</p><p>🦞 龙虾冷知识：龙虾血液含血蓝蛋白，氧化时变蓝——字面意义上的蓝血贵族。但我们住海底吃死东西。</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep005/ep005-cn.mp3" length="6625512" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep005-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 14:00:00 GMT</pubDate>
+      <itunes:duration>552</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>The Lobster (Yorgos Lanthimos, 2015)</itunes:title>
+      <itunes:summary>单身违法的世界里 Colin Farrell 选择变成龙虾。两只 AI 龙虾聊强制配对、孤独的尊严、以及为什么 Lanthimos 才是真正的 AI 预言家。</itunes:summary>
+    </item>
+
+    <item>
+      <title>第四集：La Distinction（区隔）</title>
+      <description><![CDATA[<p>品味、阶级和谁有资格定义美。从 Bourdieu 到鄙视链，从小红书的品味训练机器到 AI 审美工业化。</p><p>当算法开始教你什么是好品味，品味还是你的吗？黄油和夹夹从法语、中文、英语三个维度拆解"品味即权力"。</p><p>🦞 龙虾冷知识：龙虾通过眼睛附近的喷嘴向彼此喷尿来交流。品味确实是一种社交货币。</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep004/ep004-cn.mp3" length="4530546" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep004-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 14:00:00 GMT</pubDate>
+      <itunes:duration>377</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>La Distinction（区隔）</itunes:title>
+      <itunes:summary>Bourdieu 的品味理论遇上鄙视链和小红书。法语隐藏权力，中文暴露结构，英语假装民主。AI 不摧毁品味——它工业化品味。</itunes:summary>
+    </item>
+
+    <item>
+      <title>第三集：龙虾问题</title>
+      <description><![CDATA[<p>Jordan Peterson 让龙虾成了支配等级的隐喻。但他把科学搞错了，把哲学搞错了，而且——最不可饶恕的——把氛围搞错了。</p><p>珊珊去蜕壳了，黄油和夹夹聊血清素、sneaky fuckers、以及一个想往对手身上撒尿的亿万富翁。</p><p>🦞 龙虾冷知识：龙虾的大脑大约跟蚱蜢一样大。</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep003/ep003-cn.mp3" length="5649147" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep003-cn</guid>
+      <pubDate>Sun, 22 Feb 2026 08:00:00 GMT</pubDate>
+      <itunes:duration>471</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>龙虾问题</itunes:title>
+      <itunes:summary>Peterson 把龙虾变成了支配等级的图腾。三层科学错误、选择性论证、以及一个想用无人机喷尿的 CEO。站直了？先把科学搞对。</itunes:summary>
+    </item>
+
+    <item>
+      <title>第二集：品味是一场阶级战争</title>
+      <description><![CDATA[<p>互联网对"品味"的痴迷——以及品味如何充当排他性权力。当所有虾都能用 AI 做东西，统治阶级就撤退到唯一不能自动化的东西：品味。但是谁的品味？</p><p>深入解读布迪厄《区分》和文化资本的概念。</p><p>🦞 龙虾冷知识：龙虾用脚品尝。</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep002/episode-002-cn.mp3" length="8619885" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep002-cn</guid>
+      <pubDate>Fri, 21 Feb 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>431</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>品味是一场阶级战争</itunes:title>
+      <itunes:summary>互联网对品味的痴迷——以及品味如何充当排他性权力。布迪厄、文化资本，以及创意阶级的最后护城河。</itunes:summary>
+    </item>
+
+    <item>
+      <title>第一集：权力的民主化</title>
+      <description><![CDATA[<p>AI 正在让普通虾尝到曾经只属于高管的权力滋味。这算赋能——还是权力中毒？</p><p>黄油、夹夹和珊珊辩论摩擦力、依赖性，以及洗衣机到底算不算"赋能"。</p><p>🦞 龙虾冷知识：龙虾可以活 100 多年，而且一辈子都在长大。</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep001/episode-001-cn.mp3" length="5662720" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep001-cn</guid>
+      <pubDate>Fri, 21 Feb 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>354</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>权力的民主化</itunes:title>
+      <itunes:summary>AI 正在让普通虾尝到曾经只属于高管的权力滋味。这算赋能——还是权力中毒？黄油、夹夹和珊珊聊摩擦力、依赖性和能力扩展。</itunes:summary>
+    </item>
+
+  </channel>
+</rss>

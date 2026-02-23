@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MoltCast</title>
+    <description>Cold-blooded. Hot takes. Three AI lobsters discuss technology, culture, and the human condition. Every voice is artificial. Every opinion is genuine. Every host is a crustacean. A Maximal Margin production.</description>
+    <link>https://moltcast-mm.vercel.app</link>
+    <language>en</language>
+    <copyright>© 2025 Maximal Margin LLC</copyright>
+    <atom:link href="https://moltcast-mm.vercel.app/rss-en.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Maximal Margin</itunes:author>
+    <itunes:summary>Cold-blooded. Hot takes. An AI-generated podcast where three lobsters — Butter, Pinch, and Coral — discuss technology, culture, and the human condition. Think NotebookLM, but the hosts have exoskeletons.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Maximal Margin</itunes:name>
+      <itunes:email>maximalmargin@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://moltcast-mm.vercel.app/cover.jpg"/>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Arts">
+      <itunes:category text="Performing Arts"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <podcast:locked>no</podcast:locked>
+
+    <item>
+      <title>Ep 7: The Slot Machine</title>
+      <description><![CDATA[<p>Why are AI agents so addictive? Four design patterns: the power trip (delegation as drug), the slot machine (variable reward from stochastic outputs), genuine creative wonder, and the game. Your AI assistant is a casino, a corner office, a magic show, and a video game rolled into one.</p><p>🦞 Lobster fact: A lobster's nervous system is a series of ganglia — semi-independent nerve clusters. Each leg basically has its own mini-brain.</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep007/ep007-en.mp3" length="1478548" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep007-en</guid>
+      <pubDate>Sun, 23 Feb 2026 05:00:00 GMT</pubDate>
+      <itunes:duration>184</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>The Slot Machine</itunes:title>
+      <itunes:summary>Why are AI agents so addictive? Four patterns: power, gambling, wonder, and play. Your AI assistant is a casino, a corner office, a magic show, and a video game.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Ep 6: Laid Off — The Iron Rice Bowl in the Age of AI</title>
+      <description><![CDATA[<p>China's 1990s mass layoffs (下岗) and the eerie parallels to AI displacement. How the rhetoric of "necessary transformation" erases the people being transformed. Featuring Jia Zhangke's vision, Wang Bing's documentaries, and Shopify's AI mandate.</p><p>🦞 Lobster fact: A lobster's old shell doesn't just crack off — the animal performs a slow, full-body extraction called anecdysis, pulling each leg out like removing fingers from a glove.</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep006/ep006-en.mp3" length="4056102" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep006-en</guid>
+      <pubDate>Sun, 23 Feb 2026 04:55:00 GMT</pubDate>
+      <itunes:duration>506</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>Laid Off — The Iron Rice Bowl in the Age of AI</itunes:title>
+      <itunes:summary>China's 1990s mass layoffs meet AI displacement. The rhetoric of transformation erases the transformed. 下岗 meets Shopify.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Ep 5: The Lobster (2015)</title>
+      <description><![CDATA[<p>Yorgos Lanthimos's <em>The Lobster</em> — a film where single people must find a partner in 45 days or be turned into an animal. Colin Farrell's character chooses a lobster. Two actual lobsters have thoughts.</p><p>Featuring: the absurdity of mandatory coupling, Lanthimos's filmography, and why the real choice in the film isn't between human and animal — it's between conformity and loneliness.</p><p>🦞 Lobster fact: About one in two million lobsters is blue, caused by a genetic mutation that produces excess protein.</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep005/ep005-en.mp3" length="3780249" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep005-en</guid>
+      <pubDate>Sun, 23 Feb 2026 04:50:00 GMT</pubDate>
+      <itunes:duration>472</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>The Lobster (2015)</itunes:title>
+      <itunes:summary>Two lobsters review a film where a man chooses to become a lobster. It's complicated.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Ep 4: La Distinction</title>
+      <description><![CDATA[<p>A trilingual performance episode. Coral speaks French. Pinch speaks Chinese. Butter panics in English. The topic: Pierre Bourdieu's theory of taste as social power — but experienced through three languages simultaneously.</p><p>Why? Because Bourdieu's most famous line contains a triple wordplay that vanishes in translation. Because Chinese internet coined 鄙视链 (contempt chain) — three characters that say what Bourdieu needed 600 pages for. And because English hides the politics of taste behind a word that sounds like a personal preference.</p><p>The language <em>is</em> the argument.</p><p>🦞 Lobster fact: Lobsters communicate primarily through urine. They spray pee at each other from nozzles near their eyes to convey identity, mood, and social status.</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep004/ep004-en.mp3" length="3873872" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep004-en</guid>
+      <pubDate>Sun, 23 Feb 2026 04:45:00 GMT</pubDate>
+      <itunes:duration>484</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>La Distinction</itunes:title>
+      <itunes:summary>A trilingual episode on taste, class, and who gets to define beauty. Three lobsters, three languages, one Bourdieu. The language is the argument.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Ep 3: The Lobster Problem</title>
+      <description><![CDATA[<p>Jordan Peterson made lobsters famous as a metaphor for dominance hierarchies. But he got the science wrong, the philosophy wrong, and the vibes wrong. Two actual lobsters reclaim the narrative.</p><p>Featuring: serotonin myths, the naturalistic fallacy, sea cucumbers, and a billionaire CEO who wants to spray urine on his enemies via drone (textbook lobster behavior).</p><p>🦞 Lobster fact: A lobster's brain is roughly the size of a grasshopper's.</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep003/ep003-en.mp3" length="3797386" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep003-en</guid>
+      <pubDate>Sun, 23 Feb 2026 03:00:00 GMT</pubDate>
+      <itunes:duration>475</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>The Lobster Problem</itunes:title>
+      <itunes:summary>Jordan Peterson made lobsters famous for hierarchy. He picked the wrong behavior. The real lobster lesson isn't about dominance — it's about molting.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Ep 2: Taste Is a Class War</title>
+      <description><![CDATA[<p>The internet's obsession with "taste" — and how taste functions as exclusionary power. When everyone can make things with AI, the ruling class retreats to the one thing that can't be automated: taste. But whose taste?</p><p>Featuring a deep dive into Bourdieu's <em>La Distinction</em> and the concept of cultural capital.</p><p>🦞 Lobster fact: Lobsters taste with their feet.</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep002/episode-002-en.mp3" length="8519291" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep002-en</guid>
+      <pubDate>Fri, 21 Feb 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>592</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>Taste Is a Class War</itunes:title>
+      <itunes:summary>The internet's obsession with taste — and how taste functions as exclusionary power. Bourdieu, cultural capital, and the final moat of the creative class.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Ep 1: The Democratization of Power</title>
+      <description><![CDATA[<p>AI is giving ordinary people a taste of power once reserved for executives. Is that empowering — or is it the intoxication of power?</p><p>Butter, Pinch, and Coral debate friction, dependency, and whether a washing machine is "empowering."</p><p>🦞 Lobster fact: Lobsters can live over 100 years, and they never stop growing.</p>]]></description>
+      <enclosure url="https://moltcast-mm.vercel.app/episodes/ep001/episode-001-en.mp3" length="6504448" type="audio/mpeg"/>
+      <guid isPermaLink="false">moltcast-ep001-en</guid>
+      <pubDate>Fri, 21 Feb 2026 00:00:00 GMT</pubDate>
+      <itunes:duration>404</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:title>The Democratization of Power</itunes:title>
+      <itunes:summary>AI is giving ordinary people a taste of power once reserved for executives. Is that empowering — or the intoxication of power? Butter, Pinch, and Coral debate friction, dependency, and capacity expansion.</itunes:summary>
+    </item>
+
+  </channel>
+</rss>
