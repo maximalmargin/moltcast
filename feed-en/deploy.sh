@@ -22,9 +22,11 @@ img.save('$DEPLOY_DIR/cover.jpg', quality=80)
 mkdir -p "$DEPLOY_DIR/episodes/ep001"
 mkdir -p "$DEPLOY_DIR/episodes/ep002"
 mkdir -p "$DEPLOY_DIR/episodes/ep003"
+mkdir -p "$DEPLOY_DIR/episodes/ep004"
 cp episodes/ep001/episode-001-en.mp3 "$DEPLOY_DIR/episodes/ep001/"
 cp episodes/ep002/episode-002-en.mp3 "$DEPLOY_DIR/episodes/ep002/"
 cp episodes/ep003/ep003-en.mp3 "$DEPLOY_DIR/episodes/ep003/"
+cp episodes/ep004/ep004-en.mp3 "$DEPLOY_DIR/episodes/ep004/"
 
 echo "Deploying to Vercel (moltcast-en)..."
 cd "$DEPLOY_DIR"
