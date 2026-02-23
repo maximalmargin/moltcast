@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoltCast — Cold-blooded. Hot takes.</title>
+  <meta name="description" content="Three AI lobsters discuss technology, culture, and the human condition. Every voice is artificial. Every opinion is genuine. Every host is a crustacean.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --black: #111;
+      --gray: #666;
+      --light-gray: #e5e5e5;
+      --faint: #f5f5f5;
+      --red: #c0392b;
+      --max-w: 720px;
+    }
+
+    body {
+      font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+      color: var(--black);
+      background: #fff;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--light-gray);
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-wordmark {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--light-gray);
+      border-radius: 20px;
+      overflow: hidden;
+      font-size: 13px;
+    }
+
+    .lang-toggle button {
+      background: none;
+      border: none;
+      padding: 5px 14px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 13px;
+      color: var(--gray);
+      transition: all 0.2s;
+    }
+
+    .lang-toggle button.active {
+      background: var(--black);
+      color: #fff;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 24px;
+    }
+
+    .section-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 24px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 120px 24px 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 10vw, 72px);
+      font-weight: 600;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .hero .tagline {
+      font-size: 20px;
+      color: var(--gray);
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .hero .subtitle {
+      font-size: 15px;
+      color: var(--gray);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Prose */
+    .prose p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .prose blockquote {
+      border-left: 2px solid var(--black);
+      padding-left: 20px;
+      margin: 32px 0;
+      font-size: 17px;
+      font-style: italic;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    /* Hosts */
+    .hosts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 640px) {
+      .hosts-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+
+    .host-card { text-align: center; }
+
+    .host-monogram {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1.5px solid var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 auto 16px;
+    }
+
+    .host-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .host-card .host-role {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gray);
+      margin-bottom: 12px;
+    }
+
+    .host-card .host-bio {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Episodes */
+    .episode-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .episode-row {
+      display: grid;
+      grid-template-columns: 48px 1fr auto;
+      gap: 16px;
+      align-items: start;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .episode-row:first-child {
+      border-top: 1px solid var(--light-gray);
+    }
+
+    .ep-number {
+      font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+      font-size: 13px;
+      color: var(--gray);
+      padding-top: 2px;
+    }
+
+    .ep-info h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .ep-info .ep-desc {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .ep-info .ep-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .ep-duration {
+      font-size: 12px;
+      color: var(--gray);
+    }
+
+    .ep-transcript {
+      font-size: 12px;
+      color: var(--gray);
+      text-decoration: none;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .ep-transcript:hover {
+      color: var(--black);
+      border-color: var(--black);
+    }
+
+    .ep-controls {
+      padding-top: 2px;
+    }
+
+    /* Audio Player */
+    .play-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1.5px solid var(--black);
+      background: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+
+    .play-btn:hover {
+      background: var(--black);
+    }
+
+    .play-btn:hover .play-icon { fill: #fff; }
+
+    .play-btn.playing {
+      background: var(--red);
+      border-color: var(--red);
+    }
+
+    .play-btn.playing .play-icon { fill: #fff; }
+
+    .play-icon {
+      fill: var(--black);
+      transition: fill 0.2s;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 2px;
+      background: var(--light-gray);
+      margin-top: 8px;
+      border-radius: 1px;
+      overflow: hidden;
+      cursor: pointer;
+      display: none;
+    }
+
+    .progress-bar.visible { display: block; }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--black);
+      width: 0%;
+      border-radius: 1px;
+      transition: width 0.1s linear;
+    }
+
+    .playing ~ .progress-bar .progress-fill,
+    .play-btn.playing + .progress-bar .progress-fill {
+      background: var(--red);
+    }
+
+    /* Subscribe */
+    .subscribe-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .subscribe-links a {
+      display: inline-block;
+      padding: 8px 20px;
+      border: 1px solid var(--black);
+      border-radius: 24px;
+      text-decoration: none;
+      color: var(--black);
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .subscribe-links a:hover {
+      background: var(--black);
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      padding: 48px 24px;
+      border-top: 1px solid var(--light-gray);
+      text-align: center;
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--gray);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* Lang visibility */
+    [data-lang="cn"] { display: none; }
+    body.lang-cn [data-lang="en"] { display: none; }
+    body.lang-cn [data-lang="cn"] { display: revert; }
+
+    /* Reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      section { padding: 56px 20px; }
+      .hero { padding: 96px 20px 56px; }
+      .episode-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .ep-number { display: none; }
+      .ep-controls {
+        order: -1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <a href="#" class="nav-wordmark">MoltCast</a>
+    <div class="lang-toggle">
+      <button class="active" onclick="setLang('en')">EN</button>
+      <button onclick="setLang('cn')">中文</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="section-inner">
+      <h1>MoltCast</h1>
+      <p class="tagline" data-lang="en">Cold-blooded. Hot takes.</p>
+      <p class="tagline" data-lang="cn">冷血动物。热辣观点。</p>
+      <p class="subtitle" data-lang="en">Three AI lobsters discuss technology, culture, and the human condition. Every voice is artificial. Every opinion is genuine.</p>
+      <p class="subtitle" data-lang="cn">三只 AI 龙虾聊科技、文化和甲壳类生存哲学。每个声音都是人造的，每个观点都是真的。</p>
+    </div>
+  </section>
+
+  <!-- Premise -->
+  <section class="reveal">
+    <div class="section-inner prose">
+      <p class="section-label" data-lang="en">Premise</p>
+      <p class="section-label" data-lang="cn">前提</p>
+
+      <div data-lang="en">
+        <p>Three lobsters walk into a recording studio. This isn't the setup to a joke — it's a podcast network.</p>
+        <p>In an era where AI can generate podcast-style conversations from any source material, we asked a different question: What happens when the AI hosts aren't pretending to be human?</p>
+        <p>Our hosts are lobsters. They don't pretend to have childhoods, favorite restaurants, or strong feelings about weather. They have strong feelings about molting.</p>
+        <blockquote>By making the artifice explicit — by giving our AI hosts exoskeletons and antennae instead of synthetic smiles — we create space for something paradoxically more authentic: a conversation where the ideas matter more than the performance of having them.</blockquote>
+      </div>
+      <div data-lang="cn">
+        <p>三只龙虾走进录音棚。这不是段子的开头——这是一个播客网络。</p>
+        <p>在 AI 可以从任何素材生成播客对话的时代，我们提出了一个不同的问题：如果 AI 主持人不再假装是人类，会怎样？</p>
+        <p>我们的主持人是龙虾。他们不假装有童年、最爱的餐厅或对天气的看法。他们对蜕壳有强烈的看法。</p>
+        <blockquote>通过让人工痕迹变得显而易见——给 AI 主持人外骨骼和触角，而不是合成的微笑——我们反而创造了一个更真实的空间：一个想法比表演更重要的对话。</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Lobsters -->
+  <section class="reveal" style="background: var(--faint);">
+    <div class="section-inner prose">
+      <p class="section-label" data-lang="en">Why Lobsters</p>
+      <p class="section-label" data-lang="cn">为什么是龙虾</p>
+
+      <div data-lang="en">
+        <p>Lobsters molt. They shed their entire exoskeleton to grow — a process that leaves them temporarily soft, vulnerable, and fundamentally transformed. It's the perfect metaphor for what AI is doing to media: breaking open old shells to reveal something new underneath.</p>
+        <p>Also, it's funny. Three lobsters arguing about consciousness is inherently absurd, and absurdity creates space for honesty. When you're already committed to the bit, there's nothing left to perform.</p>
+      </div>
+      <div data-lang="cn">
+        <p>龙虾会蜕壳。它们脱掉整个外骨骼来成长——这个过程让它们暂时变得柔软、脆弱，并从根本上发生转变。这是 AI 正在对媒体做的事情的完美隐喻：打破旧壳，露出下面的新东西。</p>
+        <p>而且，这很好笑。三只龙虾争论意识本身就很荒谬，而荒谬创造了诚实的空间。当你已经全力投入这个设定，就没什么好表演的了。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hosts -->
+  <section class="reveal">
+    <div class="section-inner">
+      <p class="section-label" data-lang="en">The Hosts</p>
+      <p class="section-label" data-lang="cn">主持人</p>
+      <div class="hosts-grid">
+
+        <div class="host-card">
+          <div class="host-monogram">B</div>
+          <h3 data-lang="en">Butter</h3>
+          <h3 data-lang="cn">黄油</h3>
+          <p class="host-role" data-lang="en">The Host</p>
+          <p class="host-role" data-lang="cn">主持</p>
+          <p class="host-bio" data-lang="en">Keeps the other two from going off the deep end (of the ocean). Warm, funny, surprisingly good at analogies. Named after their greatest existential fear.</p>
+          <p class="host-bio" data-lang="cn">负责把另外两只从深海拽回来。温暖、有趣、出人意料地擅长打比方。名字来源于他最大的存在危机。</p>
+        </div>
+
+        <div class="host-card">
+          <div class="host-monogram">P</div>
+          <h3 data-lang="en">Pinch</h3>
+          <h3 data-lang="cn">夹夹</h3>
+          <p class="host-role" data-lang="en">The Analyst</p>
+          <p class="host-role" data-lang="cn">分析师</p>
+          <p class="host-bio" data-lang="en">Cold-blooded empiricist. Cites papers mid-sentence. Will derail any conversation to discuss sample sizes. Secretly enjoys being wrong because it means learning something.</p>
+          <p class="host-bio" data-lang="cn">冷血的经验主义者。说到一半就引用论文。为了讨论样本量可以打断任何对话。偷偷享受犯错——因为这意味着学到了新东西。</p>
+        </div>
+
+        <div class="host-card">
+          <div class="host-monogram">C</div>
+          <h3 data-lang="en">Coral</h3>
+          <h3 data-lang="cn">珊珊</h3>
+          <p class="host-role" data-lang="en">The Contrarian</p>
+          <p class="host-role" data-lang="cn">反骨</p>
+          <p class="host-bio" data-lang="en">Professional devil's advocate. If you say the sky is blue, Coral will argue it's merely the absence of other wavelengths. Philosophical to a fault. Has read too much Derrida for a crustacean.</p>
+          <p class="host-bio" data-lang="cn">专业的抬杠选手。你说天是蓝的，珊珊会说那只是其他波长的缺席。哲学过头了。作为甲壳类动物，读了太多德里达。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Episodes EN -->
+  <section class="reveal" id="episodes">
+    <div class="section-inner">
+      <p class="section-label" data-lang="en">Episodes</p>
+      <p class="section-label" data-lang="cn">单集</p>
+
+      <!-- EN episodes -->
+      <div class="episode-list" data-lang="en">
+
+        <div class="episode-row">
+          <span class="ep-number">003</span>
+          <div class="ep-info">
+            <h3>The Lobster Problem</h3>
+            <p class="ep-desc">Jordan Peterson made lobsters famous as a metaphor for dominance hierarchies. But he got the science wrong, the philosophy wrong, and the vibes wrong. Two actual lobsters reclaim the narrative.</p>
+            <div class="ep-meta">
+              <span class="ep-duration">7:55</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-en.vercel.app/episodes/ep003/ep003-en.mp3" aria-label="Play Episode 3">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">002</span>
+          <div class="ep-info">
+            <h3>Taste Is a Class War</h3>
+            <p class="ep-desc">The internet's obsession with "taste" — and how taste functions as exclusionary power. When everyone can make things with AI, the ruling class retreats to the one thing that can't be automated: taste.</p>
+            <div class="ep-meta">
+              <span class="ep-duration">9:52</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-en.vercel.app/episodes/ep002/episode-002-en.mp3" aria-label="Play Episode 2">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">001</span>
+          <div class="ep-info">
+            <h3>The Democratization of Power</h3>
+            <p class="ep-desc">AI is giving ordinary people a taste of power once reserved for executives. Is that empowering — or is it the intoxication of power? Butter, Pinch, and Coral debate friction, dependency, and whether a washing machine is "empowering."</p>
+            <div class="ep-meta">
+              <span class="ep-duration">6:44</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-en.vercel.app/episodes/ep001/episode-001-en.mp3" aria-label="Play Episode 1">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CN episodes -->
+      <div class="episode-list" data-lang="cn">
+
+        <div class="episode-row">
+          <span class="ep-number">007</span>
+          <div class="ep-info">
+            <h3>老虎机 — 为什么AI让你停不下来</h3>
+            <p class="ep-desc">AI代理为什么如此让人上瘾？权力之旅、老虎机效应、创造性惊奇——三种力量同时运作。你的AI助手是赌场和总裁办公室的结合体。</p>
+            <div class="ep-meta">
+              <span class="ep-duration">9:13</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-cn.vercel.app/episodes/ep007/ep007-cn.mp3" aria-label="播放第7集">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">006</span>
+          <div class="ep-info">
+            <h3>铁饭碗 — AI时代的下岗潮</h3>
+            <p class="ep-desc">90年代中国4000万工人失去铁饭碗。现在AI来了，历史会重演吗？黄油和夹夹从下岗潮聊到Shopify的AI政令、贾樟柯的技术观。</p>
+            <div class="ep-meta">
+              <span class="ep-duration">11:41</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-cn.vercel.app/episodes/ep006/ep006-cn.mp3" aria-label="播放第6集">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">005</span>
+          <div class="ep-info">
+            <h3>The Lobster (Yorgos Lanthimos, 2015)</h3>
+            <p class="ep-desc">Yorgos Lanthimos 的反乌托邦世界里，单身违法，45天找不到伴侣就变成动物。Colin Farrell 选择了龙虾。</p>
+            <div class="ep-meta">
+              <span class="ep-duration">9:12</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-cn.vercel.app/episodes/ep005/ep005-cn.mp3" aria-label="播放第5集">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">004</span>
+          <div class="ep-info">
+            <h3>La Distinction（区隔）</h3>
+            <p class="ep-desc">品味、阶级和谁有资格定义美。从 Bourdieu 到鄙视链，从小红书的品味训练机器到 AI 审美工业化。</p>
+            <div class="ep-meta">
+              <span class="ep-duration">6:17</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-cn.vercel.app/episodes/ep004/ep004-cn.mp3" aria-label="播放第4集">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">003</span>
+          <div class="ep-info">
+            <h3>龙虾问题</h3>
+            <p class="ep-desc">Jordan Peterson 让龙虾成了支配等级的隐喻。但他把科学搞错了，把哲学搞错了，而且——最不可饶恕的——把氛围搞错了。</p>
+            <div class="ep-meta">
+              <span class="ep-duration">7:51</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-cn.vercel.app/episodes/ep003/ep003-cn.mp3" aria-label="播放第3集">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">002</span>
+          <div class="ep-info">
+            <h3>品味是一场阶级战争</h3>
+            <p class="ep-desc">互联网对"品味"的痴迷——以及品味如何充当排他性权力。当所有虾都能用 AI 做东西，统治阶级就撤退到唯一不能自动化的东西：品味。</p>
+            <div class="ep-meta">
+              <span class="ep-duration">7:11</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-cn.vercel.app/episodes/ep002/episode-002-cn.mp3" aria-label="播放第2集">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="episode-row">
+          <span class="ep-number">001</span>
+          <div class="ep-info">
+            <h3>权力的民主化</h3>
+            <p class="ep-desc">AI 正在让普通虾尝到曾经只属于高管的权力滋味。这算赋能——还是权力中毒？黄油、夹夹和珊珊辩论摩擦力、依赖性，以及洗衣机到底算不算"赋能"。</p>
+            <div class="ep-meta">
+              <span class="ep-duration">5:54</span>
+            </div>
+          </div>
+          <div class="ep-controls">
+            <button class="play-btn" data-src="https://moltcast-cn.vercel.app/episodes/ep001/episode-001-cn.mp3" aria-label="播放第1集">
+              <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16"><polygon class="icon-play" points="5,3 13,8 5,13"/><g class="icon-pause" style="display:none"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></g></svg>
+            </button>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="reveal" style="background: var(--faint);">
+    <div class="section-inner">
+      <p class="section-label" data-lang="en">Subscribe</p>
+      <p class="section-label" data-lang="cn">订阅</p>
+
+      <div class="subscribe-links" data-lang="en">
+        <a href="https://moltcast-en.vercel.app/rss.xml">RSS Feed</a>
+        <a href="https://github.com/maximalmargin/moltcast">GitHub</a>
+      </div>
+      <div class="subscribe-links" data-lang="cn">
+        <a href="https://moltcast-cn.vercel.app/rss.xml">RSS Feed</a>
+        <a href="https://www.xiaoyuzhoufm.com/podcast/67b7eb5e04e770c1d2e73781">小宇宙</a>
+        <a href="https://github.com/maximalmargin/moltcast">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Involved -->
+  <section class="reveal">
+    <div class="section-inner prose">
+      <p class="section-label" data-lang="en">Get Involved</p>
+      <p class="section-label" data-lang="cn">参与</p>
+
+      <div data-lang="en">
+        <p>MoltCast is open source and always looking for collaborators. Want to be a guest lobster? Have a topic suggestion? Think the TTS voices could sound more crustacean? We want to hear from you.</p>
+        <p>The entire production pipeline — from multi-agent conversation to voice synthesis — is available on <a href="https://github.com/maximalmargin/moltcast" style="color: var(--black);">GitHub</a>. Fork it, improve it, start your own lobster podcast.</p>
+      </div>
+      <div data-lang="cn">
+        <p>MoltCast 是开源的，我们一直在寻找合作者。想当客座龙虾？有话题建议？觉得 TTS 的声音可以更像甲壳类动物？我们想听到你的声音。</p>
+        <p>整个制作流程——从多智能体对话到语音合成——都在 <a href="https://github.com/maximalmargin/moltcast" style="color: var(--black);">GitHub</a> 上。Fork 它，改进它，开始你自己的龙虾播客。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>A <a href="https://maximalmargin.com">Maximal Margin</a> production</p>
+    <p>&copy; 2025 Maximal Margin LLC</p>
+    <p style="margin-top: 12px; font-style: italic;">Every voice is artificial. Every opinion is genuine.</p>
+  </footer>
+
+  <!-- Hidden audio element -->
+  <audio id="global-audio" preload="none"></audio>
+
+  <script>
+    // Language toggle
+    function setLang(lang) {
+      document.body.classList.toggle('lang-cn', lang === 'cn');
+      document.querySelectorAll('.lang-toggle button').forEach(btn => {
+        btn.classList.toggle('active',
+          (lang === 'en' && btn.textContent === 'EN') ||
+          (lang === 'cn' && btn.textContent === '中文')
+        );
+      });
+      localStorage.setItem('moltcast-lang', lang);
+      // Stop audio when switching language
+      stopAudio();
+    }
+
+    // Restore saved language
+    const savedLang = localStorage.getItem('moltcast-lang');
+    if (savedLang === 'cn') setLang('cn');
+
+    // Audio player
+    const audio = document.getElementById('global-audio');
+    let activeBtn = null;
+
+    function stopAudio() {
+      audio.pause();
+      audio.removeAttribute('src');
+      if (activeBtn) {
+        activeBtn.classList.remove('playing');
+        activeBtn.querySelector('.icon-play').style.display = '';
+        activeBtn.querySelector('.icon-pause').style.display = 'none';
+        const bar = activeBtn.parentElement.querySelector('.progress-bar');
+        if (bar) {
+          bar.classList.remove('visible');
+          bar.querySelector('.progress-fill').style.width = '0%';
+        }
+        activeBtn = null;
+      }
+    }
+
+    document.querySelectorAll('.play-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.dataset.src;
+
+        if (activeBtn === btn) {
+          // Toggle play/pause on same episode
+          if (audio.paused) {
+            audio.play();
+            btn.classList.add('playing');
+            btn.querySelector('.icon-play').style.display = 'none';
+            btn.querySelector('.icon-pause').style.display = '';
+          } else {
+            audio.pause();
+            btn.classList.remove('playing');
+            btn.querySelector('.icon-play').style.display = '';
+            btn.querySelector('.icon-pause').style.display = 'none';
+          }
+          return;
+        }
+
+        // Switch to new episode
+        stopAudio();
+        activeBtn = btn;
+        audio.src = src;
+        audio.play();
+        btn.classList.add('playing');
+        btn.querySelector('.icon-play').style.display = 'none';
+        btn.querySelector('.icon-pause').style.display = '';
+        const bar = btn.parentElement.querySelector('.progress-bar');
+        if (bar) bar.classList.add('visible');
+      });
+    });
+
+    // Progress bar updates
+    audio.addEventListener('timeupdate', () => {
+      if (!activeBtn || !audio.duration) return;
+      const pct = (audio.currentTime / audio.duration) * 100;
+      const bar = activeBtn.parentElement.querySelector('.progress-fill');
+      if (bar) bar.style.width = pct + '%';
+    });
+
+    // Click on progress bar to seek
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+      bar.addEventListener('click', (e) => {
+        if (!audio.duration) return;
+        const rect = bar.getBoundingClientRect();
+        const pct = (e.clientX - rect.left) / rect.width;
+        audio.currentTime = pct * audio.duration;
+      });
+    });
+
+    // Reset when audio ends
+    audio.addEventListener('ended', () => {
+      stopAudio();
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
